@@ -1,0 +1,41 @@
+[
+  {
+    "isbn": ["0747581088"],
+    "isbn13": ["9780747581086"],
+    "linkjs": [
+      "https://www.goodreads.com/_next/static/chunks/pages/_app-e12374a01d4e1430f157.js"
+    ],
+    "rating": [
+      { "user": 22106879, "rating": 5 },
+      { "user": 22106879, "rating": 5 },
+      { "user": 14457130, "rating": 5 },
+      { "user": 30728719, "rating": 0 },
+      { "user": 91469730, "rating": 5 },
+      { "user": 101693182, "rating": 5 },
+      { "user": 47207032, "rating": 5 },
+      { "user": 41788524, "rating": 0 },
+      { "user": 23302801, "rating": 5 },
+      { "user": 27788046, "rating": 5 },
+      { "user": 614778, "rating": 5 },
+      { "user": 156760, "rating": 5 },
+      { "user": 17438949, "rating": 5 },
+      { "user": 858949, "rating": 4 },
+      { "user": 32879029, "rating": 4 },
+      { "user": 53701594, "rating": 5 },
+      { "user": 43850323, "rating": 4 },
+      { "user": 128749680, "rating": 0 },
+      { "user": 8937622, "rating": 5 },
+      { "user": 73227612, "rating": 4 },
+      { "user": 69603149, "rating": 5 },
+      { "user": 7407364, "rating": 5 },
+      { "user": 53478239, "rating": 5 },
+      { "user": 10350463, "rating": 5 },
+      { "user": 54464244, "rating": 4 },
+      { "user": 60866073, "rating": 3 },
+      { "user": 37089590, "rating": 5 },
+      { "user": 30036082, "rating": 5 },
+      { "user": 20658145, "rating": 5 },
+      { "user": 30248594, "rating": 5 }
+    ]
+  }
+]

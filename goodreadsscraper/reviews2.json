@@ -1,0 +1,3108 @@
+{
+    "data": {
+        "getReviews": {
+            "totalCount": 1740,
+            "edges": [
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.XyoMLQ1JVmupYBbADnjPeA",
+                        "creator": {
+                            "id": 3267545,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1389224768i/3267545._UX200_CR0,36,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 27,
+                            "__typename": "User",
+                            "textReviewsCount": 852,
+                            "name": "Greta is Erikasbuddy",
+                            "webUrl": "https://www.goodreads.com/user/show/3267545-greta-is-erikasbuddy",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.472337684822E12,
+                        "createdAt": 1.307651672E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.325106606E12,
+                        "text": "This book was most awesometasticla!!<br /><br />You know those books that want to ROMANTICIZE every last thing down to the very last lint ball? Sometimes those things drive me insane. Sometimes I just want a story... TOLD LIKE A STORY!!<br /><br />Well buddy, I got it with THE REAPERS ARE THE ANGELS.<br /><br />I don't know if it's because it was told by a man, or maybe because it's told in 3rd person, but it was told right. I never got board. And I never once thought these two or that two or those three were going to fall in love or bicker or you know... birds were going to sing while someone did housework.<br /><br />It was just most AWESOME!!<br /><br /><br /><b>The Plot</b><br />It's about a girl named TEMPLE who lives out on an island. She's 15 years old but has the street smarts of someone at least twice her age. One day her island gets a floating zombie and she decides it's time to find a new home. That's when she runs into the most awesome adventure EVER!! Like... EVER!! I can't even describe it all. There's all these adventures she has and all these colorful characters that she meets. I'm sure this would make a fantastic movie!<br /><br /><b>Greta's Thoughts</b><br />The wording of the story is what I liked the best. It's simple and yet makes you think about everything. I loved it!<br /><br />The idea of everyone dying and coming back as a zombie (in my opinion) was pretty unique. Normally you have to get bit or maybe you get a cold... but in this one you just die and come back when you're ready. I loved that. And I also loved the idea that you just have to do a bit of this and that to keep the dead from becoming the undead.... but you better hurry up or you might become dinner.<br /><br />My favorite characters were the hillbillies that Temple ran into on her way through either Louisiana or Mississippi. I felt they were some of the most creative characters that I have read ever since reading Silas by Robert Duperre. Very very imaginative! Loved them... even though if I met them in real life they probably would scare the tar out of me.<br /><br />The Little Red Riding Hood scene towards the end just about killed me. I squeed like a little girl. (that's right... squeed)<br /><br />I also enjoyed all the religion in this story. I figure that was probably very much needed. If the world has gone to pot, the tv is out of cable, and zombies are munching at my brain then I figure it must be comforting to believe in a slick god ;)<br /><br />I also very much enjoyed the relationship between Temple and Moses was in a way romantic if you ask me. I don't think they wanted to let each other go even though they were sworn enemies. It reminded me of Batman and Joker in the Dark Knight.<br /><br /><a target=\"_blank\" rel=\"noopener nofollow\" href=\"http://www.youtube.com/watch?v=3dtFIjaD5hA\">http://www.youtube.com/watch?v=3dtFIj...</a><br /><br /><b>For the kids?</b><br />I don't recommend it to the kiddies because there is a bit of hanky panky but not a bunch. I just wouldn't want to know that my 14 year old is reading it but I know it wouldn't scar him. It just depends on hip and cool of a parent you are. Also, there isn't much cussing but there is a bit.<br /><br /><b>Overall</b><br />This is a very refreshing zombie book. It won't keep you up all night trembling in fear but it will give you something to think about when you go to bed. I know I'll be thinking about this book for days to come. If you love zombies and a good story, then this book is for you!!<br /><br /><b>Extra Reading</b><br />I you have read THE REAPERS ARE THE ANGELS and enjoyed the story then might I recommend \"Silas\" by Robert J. Duperre. It too is jam packed with an adventure that is out of this world!<br /><a target=\"_blank\" rel=\"noopener nofollow\" href=\"http://www.goodreads.com/book/show/11751470-silas\">http://www.goodreads.com/book/show/11...</a><br />",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/3267545?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [],
+                            "webUrl": "https://www.goodreads.com/review/show/175197733",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 7,
+                        "viewerHasLiked": null,
+                        "commentCount": 18
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.MCxN5peLZOJ8EZ25OXkGTA",
+                        "creator": {
+                            "id": 5519555,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1709860253i/5519555._UX200_CR0,4,200,200_.jpg",
+                            "isAuthor": true,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 385,
+                            "__typename": "User",
+                            "textReviewsCount": 143,
+                            "name": "Mark Matthews",
+                            "webUrl": "https://www.goodreads.com/user/show/5519555-mark-matthews",
+                            "contributor": {
+                                "id": "kca://author/amzn1.gr.author.v1.wd-xPOBQQxgiKtyLqKpJcg",
+                                "works": {
+                                    "totalCount": 24,
+                                    "__typename": "ContributorWorksConnection"
+                                },
+                                "__typename": "Contributor"
+                            }
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.597160305221E12,
+                        "createdAt": 1.322791036E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.323980248E12,
+                        "text": "As always, stars are given to books based on their genre and purpose and place on the grand bookshelf of life. What this means is a cute indie book bought for $1.99 which I give 4 stars isn’t better than the literary fiction I give 3 stars. Every piece of work has its place. Doesn’t mean there are not standards, just means you shouldn’t expect, for example, the slapstick comedy to have deeper meaning and connect with your heart on a deeper level than a piece of literary fiction. <br /><br />And you shouldn’t necessarily expect a Zombie novel to be so expressive, metaphorical, and engrossing. And this is certainly a five star Zombie genre novel.<br /><br />I grabbed this book since it was heralded as perfect for fans of The Passage. What I found is a book with more meaning than The Passage, it makes The Passage look just a little bubble gum.<br /><br /> You all know the drill; a post-apocalyptic world where the dead come back to life, try to eat the living, and they have been fairly successful destroying the population except for pockets here and there. The main character, who has never known the world before the “slugs” came, is struggling for a safe place to stay. She journeys around the landscape, unable to feel safe anywhere so is always moving on, once in a while she finds joy and comes to the conclusion that “god is slick”:… but her real battle is she can’t feel safe inside her skull for past deeds, so she can really never find rest. <br /><br /> “Am I evil?” the main character wants to know and shed her shame. <br /><br /> The reader wants to scream, “no, you’re not evil… you are just angry and hurt and grieving”… and the irony is, instead of the reader telling her this, it is the man who is hunting her down trying to kill her who feels she is special.. The same man who respects her and sees her for what she is, is the one who tracks her down like a gun slinging Valjert.<br /><br />As the novel unfolds, its seems the human race is asking itself “are we evil? Do we deserve redemption?” With every character the girl meets, the reader wonders if they are friend or foe. The zombies are just barriers, it's her fellow humans who are the real danger. I couldn't help but think of Huck Finn traveling across the countryside who, finally decides “all right, I’ll go to hell.” Temple from 'Reapers' never gets past her angst to any such conviction.<br /><br /> The novel is full of beautiful prose, beautiful paradoxes, and flows sweet and deep. The dialogue in the novel is not in quotes, but stuck into the paragraph of the first person main character which sucks you even deeper into her world, and the dialect is written in short, memorable phrases such as “I’m gon kill u.”<br /><br /> The landscape, much like the world of \"The Road,\" is a character in its own right, only in The Reapers there seems to be the possibility of redemption and rebirth dotted across the countryside, as either hope or reminders of what is lost, or what can maybe be rebuilt. Civilizations start to pop up, heroes emerge gathering people to safety, although the people are injured or maimed and full of despair and it's clear any new world will have the scars of the old on it forever.<br /><br />To dance around the spoilers, expect a thrilling, deliciously readable novel where vengeance is gained but by the wrong hands, magnificent sights are finally seen but by perhaps the wrong eyes, and the Best Hill-Billy group since The Deliverance.<br /><br />God is a slick God, and so is this author.<br /><br />",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/5519555?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [],
+                            "webUrl": "https://www.goodreads.com/review/show/242063313",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 7,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.OAh4YHQWrzajBvaIHpBJkQ",
+                        "creator": {
+                            "id": 3359770,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1680884859i/3359770._UX200_CR0,2,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 130,
+                            "__typename": "User",
+                            "textReviewsCount": 489,
+                            "name": "Donna ",
+                            "webUrl": "https://www.goodreads.com/user/show/3359770-donna",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.472115246991E12,
+                        "createdAt": 1.32568059E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.373101128E12,
+                        "text": "The Reapers Are the Angels I have read so many glowing reviews of The Reapers are the Angels that I simply had to see what all the fuss was about and even though I was warned ahead of time about the bloody bits, I still wanted to read this. I decided to listen to this on audio and I think the narrator did an amazing job giving voice to the conflicted and unique character that was Temple. I would certainly recommend this audio to anyone who is planning to read this. Temple was an intriguing character, so full of contrasts, she was kind and considerate but with the capacity to become extremely violent if provoked which made sense considering the dangerous world she grew up in. She was also extremely intelligent, logical, and self-aware but at the same time illiterate and simplistic in many ways. Her character fascinated me and reminded me, in a lot of ways, of Saba from Blood Red Road except Temple was much more complex. I was fascinated with the way she accepted the world for what it was and did her best to work within it instead of fight against what she could not control. I have to say, Temple is one of the most interesting characters I’ve read. The writing was vividly descriptive and unapologetically raw. It brought to life a bleak and desolate world overrun by the undead who were themselves more pathetic and sad than scary. The pockets of survivors that Temple came upon showed the best and worst of humanity. It was interesting to see the many ways that desperation and hopelessness may cause people to react. There were some people and situations that pushed the boundaries of believability, even for a zombie book but for the most part, I could realistically imagine that this is what the aftermath of a zombie apocalypse would look like. For some reason, I felt really disconnected from the story. I’m not sure whether it was the third person narration or the philosophical and highly allegorical way this was written, but while I could pick out a hundred beautifully phrased quotes, I was never truly engaged in the story. At times I felt that the writing was almost a bit pretentious and that it tried so hard to be literature as opposed to genre fiction that it overreached and ended up just being absurd. Or it could simply be that I am more interested in being entertained by a story than in trying to ponder life’s mysteries or decipher allegory. I definitely enjoyed listening to The Reapers are the Angels and, while it wasn’t really my thing, I can certainly see where other people would appreciate the writing style and depth.",
+                        "rating": 3,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/3359770?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "blood-and-gore",
+                                        "webUrl": "https://www.goodreads.com/review/list/3359770?shelf=blood-and-gore",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "death",
+                                        "webUrl": "https://www.goodreads.com/review/list/3359770?shelf=death",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "its-the-end-of-the-world-as-we-know",
+                                        "webUrl": "https://www.goodreads.com/review/list/3359770?shelf=its-the-end-of-the-world-as-we-know",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "because-someone-else-liked-it",
+                                        "webUrl": "https://www.goodreads.com/review/list/3359770?shelf=because-someone-else-liked-it",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "recommended",
+                                        "webUrl": "https://www.goodreads.com/review/list/3359770?shelf=recommended",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "zombies",
+                                        "webUrl": "https://www.goodreads.com/review/list/3359770?shelf=zombies",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/256033329",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 7,
+                        "viewerHasLiked": null,
+                        "commentCount": 2
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.HMqCHZmCvNa5ecIVS16mMw",
+                        "creator": {
+                            "id": 714321,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1587964556i/714321.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 32,
+                            "__typename": "User",
+                            "textReviewsCount": 145,
+                            "name": "Silver Thistle ",
+                            "webUrl": "https://www.goodreads.com/user/show/714321-silver-thistle",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.560629902048E12,
+                        "createdAt": 1.415558817E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.482582822987E12,
+                        "text": "I LOVE an end of the world scenario!<br />The zombies were not the focus of this book but I still LOVED it! So much!<br /><br />It's true, it's not about the zombies. They're there, and they're just as stinky and dead as you'd imagine but I felt 'safe' walking among them because I had Temple with me. Temple is so amazing. From now on in my nightmare's I'm going to take Temple with me. Temple has fear of nothing and/or nobody and despite being just a little girl, a teen, she's one of the most kick-ass heroine's I've read about in a long time.<br /><br />She hasn't known any other way of life as she was born after the dead started rising and has been pretty much alone her whole life. We're told that she spent some of her early life in an orphanage and that she's had a few companions on her journey through the wasteland but when we meet her she is on her own. Having Temple as a guide made me just relax and enjoy the ride. She's Street-Smart and infinitely capable. She takes everything in her stride, doesn't freak out and above all gets the job done. Always. In a way she's even more deadly than the zombie's.<br /><br />Along the way she meets two men who are to become central to her story. Maury is a grown man with the mental age of a very young child and Temple takes him under her wing and looks after him (initially unwillingly), and their relationship is very touching. Moses is an older, male version of Temple herself and their relationship is based on friction but there's some grudging respect there too.<br /><br />I'll be honest, I thought I was going to hate this book for the simple reason that within the first 2 pages I spotted my pet hate in written text. THE WORST TEXT CRIME. The word 'of' instead of 'have' - \"I should <b>of</b> known that was wrong\" instead of \"I should <b>have</b> known that was wrong\". I kept going though and quickly realised that it's mostly told from Temple's point of view and is written exactly as if spoken, text crimes and all. Having said that though, the story was so good and I was so engrossed in it that I was halfway through before I noticed there's nothing to indicate speech. Sound's crazy but I honestly didn't even notice that to begin with and when it suddenly dawned on me I didn't even miss a beat. It's weird but I didn't have a problem with it...which in itself is weird because that sort of thing usually rubs me up TOTALLY the wrong way.<br /><br />Anyhoo, it's a fantastic story.<br /><br />I'd recommend this as a great read if you're into zombies, the apocalypse and/or road-trip type books. I really, really liked it.",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/714321?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "post-apocalyptic",
+                                        "webUrl": "https://www.goodreads.com/review/list/714321?shelf=post-apocalyptic",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/1101705361",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 7,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.yxuSKhB7_yipdqNU64Miug",
+                        "creator": {
+                            "id": 69972358,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1641388059i/69972358._UX200_CR0,5,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 15,
+                            "__typename": "User",
+                            "textReviewsCount": 73,
+                            "name": "Marie Helene",
+                            "webUrl": "https://www.goodreads.com/user/show/69972358-marie-helene",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.68893483758E12,
+                        "createdAt": 1.685998805382E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.687722292302E12,
+                        "text": "Despite its moments, an overall pretty disappointing book.<br /><br /><br /><i>'The enemy who sowed the thistles among the wheat is the devil; the harvest is the end of the world, and the reapers are the angels.'</i> Matthew 13:39 ",
+                        "rating": 2,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/69972358?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "kindle-edition",
+                                        "webUrl": "https://www.goodreads.com/review/list/69972358?shelf=kindle-edition",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/5358655330",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 7,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.mkqQBld5ZJjMJ-dPmwdOpA",
+                        "creator": {
+                            "id": 2613919,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1483904179i/2613919._UY200_CR33,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 275,
+                            "__typename": "User",
+                            "textReviewsCount": 1179,
+                            "name": "Jason",
+                            "webUrl": "https://www.goodreads.com/user/show/2613919-jason",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.472014629784E12,
+                        "createdAt": 1.284254963E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.284346149E12,
+                        "text": "A hauntingly beautiful tragedy and coming of age story that takes place in a land filled with the undead. This is not a story that tells us about the apocalypse or the \"how's and why's\". It is however, a story about being human, about being alone, love, god, and hope. The protagonist Temple is a 16 year girl that sees the world for much more than the post-apocalypse that it has become. She is a deep and complex character that stole my heart right from the beginning. I admit that I have a soft spot for zombies and for the whole post apocalypse genre in general. That being said, this is truly a fabulous novel that will appeal to a much bigger audience than that of the one I just mentioned. Like Cormac Mccarthy's \"The Road\", this novel is filled with great symbolism and deep meaning. Even the characters names have a resonating power to them. I loved the intensity of the gory action, the quiet beauty of the still moments, the things that were left and unsaid, and the resolution of the actions taken. This is much more than a YA post-apocalyptic novel. Don't Miss This One!!!!",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/2613919?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "e-books",
+                                        "webUrl": "https://www.goodreads.com/review/list/2613919?shelf=e-books",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "read-2010",
+                                        "webUrl": "https://www.goodreads.com/review/list/2613919?shelf=read-2010",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "current-favorite-5-stars",
+                                        "webUrl": "https://www.goodreads.com/review/list/2613919?shelf=current-favorite-5-stars",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/121219065",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 7,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.WAg76mzsK8RMD8TjhIEC4A",
+                        "creator": {
+                            "id": 1389748,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1231161516i/1389748._UX200_CR0,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 540,
+                            "__typename": "User",
+                            "textReviewsCount": 3577,
+                            "name": "Skip",
+                            "webUrl": "https://www.goodreads.com/user/show/1389748-skip",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.529488344141E12,
+                        "createdAt": 1.341662848E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.341663221E12,
+                        "text": "Zombies are not my thing, but I read about this book in the NY Times Book Review. Temple is a troubled fifteen year old that has seen and done gruesome things to survive in a post apocolyptic world, mostly on her own. When she tries to assimilate, she finds herself fending off an unwanted advance and kills her attacker, forcing her to flee. The attacker's brother, a kindred spirit, spends the rest of the book tracking her down for retribution. Temple's views of the world and worries about her own humanity are poignant. Bell has done a nice job wiritng a book where the zombies (meatskins, slugs, gobblers) are only background to compelling human drama.",
+                        "rating": 4,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/1389748?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "horror",
+                                        "webUrl": "https://www.goodreads.com/review/list/1389748?shelf=horror",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "award-winners",
+                                        "webUrl": "https://www.goodreads.com/review/list/1389748?shelf=award-winners",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/362966884",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 7,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.awQitmVb7T0JiQxxl4NSQw",
+                        "creator": {
+                            "id": 5172893,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1413088169i/5172893._UY200_CR33,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 335,
+                            "__typename": "User",
+                            "textReviewsCount": 5801,
+                            "name": "Sesana",
+                            "webUrl": "https://www.goodreads.com/user/show/5172893-sesana",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.490543743909E12,
+                        "createdAt": 1.478136782481E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.4781376592E12,
+                        "text": "Absorbing and often beautifully written. I didn't particularly care for the inbred redneck interlude, but otherwise the story, though meandering, is solid. The zombies are appropriately creepy, and I liked that this book was set so long after the initial uprising, once there's been some small progress towards reclaiming the world. Some readers might have trouble suspending their disbelief at the sheer amount of pre-zombie food and working tech, but it didn't bother this Fallout fan.",
+                        "rating": 4,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/5172893?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "horror",
+                                        "webUrl": "https://www.goodreads.com/review/list/5172893?shelf=horror",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/252479477",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 7,
+                        "viewerHasLiked": null,
+                        "commentCount": 1
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.Ht2Vx9Kw59UiGoC6fAaAAQ",
+                        "creator": {
+                            "id": 8735103,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1579945824i/8735103._UX200_CR0,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 482,
+                            "__typename": "User",
+                            "textReviewsCount": 2358,
+                            "name": "Repix Pix",
+                            "webUrl": "https://www.goodreads.com/user/show/8735103-repix-pix",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.581497746266E12,
+                        "createdAt": 1.581387203481E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.581387218596E12,
+                        "text": "Da igual zombies, alienígenas o toreros amantes de los animales, un libro tiene que ser creíble, y de eso no he visto nada aquí.",
+                        "rating": 1,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/8735103?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [],
+                            "webUrl": "https://www.goodreads.com/review/show/3185371247",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 6,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.CvuoL60QAWN9QurRiStEDA",
+                        "creator": {
+                            "id": 179852,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1242522005i/179852.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 532,
+                            "__typename": "User",
+                            "textReviewsCount": 1841,
+                            "name": "Katie(babs)",
+                            "webUrl": "https://www.goodreads.com/user/show/179852-katie-babs",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.697686772985E12,
+                        "createdAt": 1.283094417E12,
+                        "spoilerStatus": true,
+                        "lastRevisionAt": 1.283715828E12,
+                        "text": "Temple is a sixteen-year-old (or she may be fifteen because she goes back and forth about her age) orphan who travels by herself in a world filled with zombies. She nicknames them meatskins and finds them to be more than a nuisance if anything. Temple is pretty skilled at surviving. She has her pistol with two good rounds left in it and a gurkha knife that can slit a zombie's throat, as well as a human's. Temple travels from state to state where she comes in contact with many survivors of the zombie apocalypse that occurred around twenty-five years ago. But things are not as desperate as they seem. There's still electricity in certain areas and some folks are willing to share their food and protection. Temple is somewhat anti-social and haunted by the death of a young boy she couldn't save.<br /><br />When Temple comes across a town filled with people who are trying to rebuild, she stays with them for awhile. But then one of the men, Abraham, tries to force himself on her, and she does the only thing she can do, and that is to fight. Unfortunately for Temple the outcome is bad and she has no choice but to leave. But then Abraham's brother Moses starts tracking her. And when he finds her, he will kill her.<br /><br />As Temple tries to outwit Moses, she meets a wide variety of people who have closed themselves off from the world in order to forget the death and the zombies who walk around hungering for their next taste of human flesh. Temple will try her best not to end up zombie food or become a victim of Moses's revenge.<br /><br />The Reapers are the Angels was very mundane and boring reading. There is a major lack of actual dialogue that tries to do something different that doesn't work at all. There is absolutely no dialogue with quotation marks as is the norm in the majority of the books I read. An example goes as follows:<br /><br />But you're so pretty, he says.<br />That's it, she says.<br /><br />This reader says, how annoying.<br /><br />Things read very cut and dry. At times I felt like I was reading a Dr. Seuss novel with the simplicity of the conversations. The zombie backdrop was more of a second thought if anything. We see the zombies and we know they're out there because of Temple's view, but there is very little interaction with them. Also, there were a few scenes I had to re-read because things are lost in the interpretation such as Temple becoming a foster mother of sorts to grown men she finds along the way who she calls \"Dummies\" because they have major mental handicaps. I couldn't figure out if this was a side effect to those who were lucky enough not to be infected by the zombie virus. Also the lack of any tension was a big downfall even with Temple on the run from Moses.<br /><br />And things grew even stranger when Temple meets up with a ground of inbreed freaks who inject themselves with zombie brains that makes them walking rotting corpses that still think. The reason? You got me because it's never explained and suddenly comes out of nowhere. Probably the author thought this would shock the reader's sensibilities. I was more in lines of thinking,-\"you've got to be kidding me, what a total fail\". Again this was another plot device that just didn’t work and doesn't further along the story.<br /><br />The Reapers are Angels is very unemotional reading. There is no connect for the reader whatsoever even with the character of Temple who acts more like a robot with no feelings or true sense of right and wrong. I couldn't say Temple was shell shocked by the world she was stuck, but more of an observer that's very one-dimensional. I wasn't engaged in anyway and at one point I yawned during what I guess is the most critical point in the story. <br /><br />Alden Bell leaves much to be desired with this book and one that is a pass.",
+                        "rating": 1,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/179852?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "gag-worthy-book",
+                                        "webUrl": "https://www.goodreads.com/review/list/179852?shelf=gag-worthy-book",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/119121956",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 6,
+                        "viewerHasLiked": null,
+                        "commentCount": 1
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.AlSz_lW77x8EuQBraYWTKA",
+                        "creator": {
+                            "id": 2644090,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1558548351i/2644090._UX200_CR0,27,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 480,
+                            "__typename": "User",
+                            "textReviewsCount": 1433,
+                            "name": "Erica",
+                            "webUrl": "https://www.goodreads.com/user/show/2644090-erica",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.592932323324E12,
+                        "createdAt": 1.285690923E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.334091378E12,
+                        "text": "I'm pretty sure that's a shot of Milla Jovovich on the cover.<br /><br />I'd put this on my To Read list back in Sept. 2010. I got around to listening to it a year and a half later, forgetting what it was about. It looked like another fairy/vampire/demons story. I haven't listened to one of those for awhile and figured it was time, though I wasn't prepared to be impressed.<br /><br />It's actually about zombies. Actually, it is about the people who survive alongside the zombies 25 years after the zombie apocalypse has happened. They're called \"meatskins\", \"slugs\", and other fetching things, but they're zombies. <br />I so hate zombies. I hate zombie movies, zombie stories, zombie anything, really, though I'm always mistaken as someone who likes zombie miscellanea. I don't. I never have. I think zombies are stupid and boring...because they are. I was a little appalled at myself for having put a zombie story on my To Read list (and don't go looking at the zombie crap I've already read and yes, I did love <i>World War Z</i> but, again, it's about survival. And it is choc-full of handy tips. Don't judge me)<br />At any rate, right after I was done being irritated with myself over tricking myself into listening to a stupid zombie story, I was then glad that past me read enough about this story to know that it would be enjoyable and that I had put it on my list.<br /><br />I was completely caught-up in this story. It is definitely less about the walking dead chasing people down and eating them, though their shambling selves make up the entire backdrop, and more about the hard-but-cherished life of a lone fifteen-year-old girl who has learned how to live in the only environment she's ever known. Even though she's supremely capable, she lives with guilt and doubt and some self-loathing. She's a restless soul who cannot settle down with other survivors and finds herself living as a nomad in the American south, meeting people who eke out a living in compounds and mansions, people who have hope for the future and plan to rebuild towns or maybe a new race, and people who want to kill her.<br /><br />I liked Temple's voice, I liked how she handled herself, I liked that she was very capable, I liked that she tried to do the right thing, I like that she understood and accepted the world and her place in it, and I liked that even with all of that, she was flawed and that she took on too much personal responsibility for things that weren't hers. She was a good, strong, but also frustrating character and I appreciate that.",
+                        "rating": 4,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "audiobook",
+                                        "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=audiobook",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "dead-friends-and-family",
+                                        "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=dead-friends-and-family",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "dystopias",
+                                        "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=dystopias",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "future-fiction",
+                                        "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=future-fiction",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "horror",
+                                        "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=horror",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "mysterious-disease",
+                                        "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=mysterious-disease",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "survival",
+                                        "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=survival",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "travel",
+                                        "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=travel",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "witches-vampires-ghosts-werewolves",
+                                        "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=witches-vampires-ghosts-werewolves",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "women-and-girls",
+                                        "webUrl": "https://www.goodreads.com/review/list/2644090?shelf=women-and-girls",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/123804168",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 6,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.GeyV1jDqrf9q_WgyVbLz4A",
+                        "creator": {
+                            "id": 13184779,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1466224551i/13184779._UY200_CR62,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 0,
+                            "__typename": "User",
+                            "textReviewsCount": 164,
+                            "name": "Anne",
+                            "webUrl": "https://www.goodreads.com/user/show/13184779-anne",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.492048445628E12,
+                        "createdAt": 1.379402413E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.383111214E12,
+                        "text": "I didn’t expect to love a story about zombies (<a href=\"https://goodreads.com/book/show/8051458.The_Reapers_Are_the_Angels__Reapers___1_\" title=\"The Reapers Are the Angels (Reapers, #1) by Alden Bell\" rel=\"noopener\">The Reapers Are the Angels</a> is on my “out-of-my-comfort-zone” shelf for a reason). I was expecting a lot of blood, bones and all sorts of body parts, but then Temple touched me with her incredible resilience and I can say now that this is one of the best books I've read this year.<br><br>At first I couldn’t understand her motivation to do what she did. She’s <b>alone</b> (no family, no friends) in a world full of zombies! Man, I would probably BEG to die! But Temple is different, of course. She went through a lot and became a fighter, a warrior. She wants to live; she wants to see the world.<br><br>Temple is sweet in an unconventional way. She sees herself as a bad person because <input type=\"checkbox\" class=\"spoiler__control\" aria-label=\"The following text has been marked spoiler. Toggle checkbox to reveal or hide.\" onchange=\"this.labels[0].setAttribute('aria-hidden', !this.checked);\" id=\"4a515134-cb28-4045-9baa-8c1d23b4714a\" /><label aria-hidden=\"true\" class=\"spoiler\" for=\"4a515134-cb28-4045-9baa-8c1d23b4714a\">she’s ok with the idea of killing</label>, but the fact that she is capable of caring for a stranger <input type=\"checkbox\" class=\"spoiler__control\" aria-label=\"The following text has been marked spoiler. Toggle checkbox to reveal or hide.\" onchange=\"this.labels[0].setAttribute('aria-hidden', !this.checked);\" id=\"d49e747c-0c9c-40fe-8960-46cfbf781aea\" /><label aria-hidden=\"true\" class=\"spoiler\" for=\"d49e747c-0c9c-40fe-8960-46cfbf781aea\">Maury</label> shows that yes, she <b>is</b> an amazing girl. Her story is absolutely beautiful. Absolutely beautiful.<br><br><blockquote>\n  <i>\n    <b>Everyplace is your backyard.</b>\n  </i>\n</blockquote><br><br><u>Note:</u> I read this book a month ago and tried to write a good review 1.000 times, but I always ended up crying and had to stop. That’s why I won’t try to write a good review this time. ;) I just had to say how unique this book is.<br>_________________________________________<br><br><img src=\"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1380436934i/883414._SX540_.jpg\" class=\"gr-hostedUserImg\" loading=\"lazy\"><br><br>Anna recommended three books [Sharp Teeth, The Reapers Are the Angels, Scarlet, Vol. 1] and I chose one of them to read. She loved these stories and believes that I'll like them too. The idea was to select books that were out of my radar or comfort zone. I did the same for her and now she’s reading <a href=\"http://www.goodreads.com/review/show/725024724\" rel=\"nofollow noopener\">The Siren</a>. &gt;:)</[\"br\"]></[\"br\"]></[\"br\"]></[\"br\"]></[\"br\"]></[\"br\"]></[\"br\"]></[\"br\"]></[\"br\"]></[\"br\"]></[\"br\"]></[\"br\"]></[\"br\"]>",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "recommended",
+                                        "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=recommended",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "bananas-shelf",
+                                        "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=bananas-shelf",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "dystopia-fantasy-paranormal-sci_fi",
+                                        "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=dystopia-fantasy-paranormal-sci_fi",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "great-cover",
+                                        "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=great-cover",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "stepping-out-of-my-comfort-zone",
+                                        "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=stepping-out-of-my-comfort-zone",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "read-in-2013",
+                                        "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=read-in-2013",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "5-stars",
+                                        "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=5-stars",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "favorites",
+                                        "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=favorites",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "inspiring",
+                                        "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=inspiring",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "made-me-cry",
+                                        "webUrl": "https://www.goodreads.com/review/list/13184779?shelf=made-me-cry",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/721704786",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 6,
+                        "viewerHasLiked": null,
+                        "commentCount": 32
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.-yFuBbPZbVU9FaaR7Fz5Cg",
+                        "creator": {
+                            "id": 226335,
+                            "imageUrlSquare": "",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 0,
+                            "__typename": "User",
+                            "textReviewsCount": 543,
+                            "name": "Tressa ",
+                            "webUrl": "https://www.goodreads.com/user/show/226335-tressa",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.470430150178E12,
+                        "createdAt": 1.358953191E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.359343518E12,
+                        "text": "The Reapers are the Angels takes place 25 years after a zombie apocalypse, and it's more about the non-zombies and how they're dealing with a changed environment—the zombies (meatskins) are on the periphery of the story. Reapers centers around a young illiterate 15-year-old girl named Temple who is forced to wander the country due to circumstances beyond her control (seems like every place she sets down, something bad happens to make her move on). Although there are safe areas where people gather behind fences to pick up the pieces of their shattered lives and jump start a new society, Temple comes alive only when she's on the road, killing meatskins and seeing what's left of the world. Her one goal is to visit Niagara Falls.<br /><br />After visiting one of these safe havens, Temple kills a man who tries to rape her. Unfortunately for her, the dead man has a vengeful brother named Moses Todd who tracks her from place to place out of a sense of duty to his dead brother. When she picks up a big mute guy she calls \"dummy,\" it's even harder to stay one step ahead of Todd.<br /><br />Reapers takes place in the southern states of America, and I loved the southern feel of the dialog, people, and places. Alden Bell does a great job with character development and his lyrical style makes this novella stand head and shoulders above other books in this sub-genre. There were no tired horror cliches in this story, something I always appreciate after reading horror for decades. I will definitely read more of Bell in the future. ",
+                        "rating": 4,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/226335?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "zombies",
+                                        "webUrl": "https://www.goodreads.com/review/list/226335?shelf=zombies",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "dystopian",
+                                        "webUrl": "https://www.goodreads.com/review/list/226335?shelf=dystopian",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/514728797",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 6,
+                        "viewerHasLiked": null,
+                        "commentCount": 6
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.AV99QC23c2wJIhN8AlwNmg",
+                        "creator": {
+                            "id": 3491365,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1354558737i/3491365._UX200_CR0,10,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 209,
+                            "__typename": "User",
+                            "textReviewsCount": 601,
+                            "name": "Kristin  (MyBookishWays Reviews)",
+                            "webUrl": "https://www.goodreads.com/user/show/3491365-kristin-mybookishways-reviews",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.472864228304E12,
+                        "createdAt": 1.284331316E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.322101953E12,
+                        "text": "It's been 25 years since whatever horror that started the zombie apocalypse spread throughout the world. Fifteen year old Temple, driven from the lighthouse she calls home, begins a harrowing journey across a ruined America. Unflinching and brutal, Temple's journey is fraught with danger, yet she eventually finds a purpose that will test her capacity for love and hope, and strengthen her will to live. <br />I could not put this book down. I fell in love with this tough, damaged, illiterate, street smart girl as she made her way across a wasteland filled with not only unspeakable horror (there are some genuinely scary, disturbing moments), but also oasis' of beauty and humanity.<br />Alden Bell has created a zombie novel of the highest order. In addition, he's created something rarely seen in this genre, a literary gem. <br />",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/3491365?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "dystopian",
+                                        "webUrl": "https://www.goodreads.com/review/list/3491365?shelf=dystopian",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "fantasy",
+                                        "webUrl": "https://www.goodreads.com/review/list/3491365?shelf=fantasy",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "zombies",
+                                        "webUrl": "https://www.goodreads.com/review/list/3491365?shelf=zombies",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "horror",
+                                        "webUrl": "https://www.goodreads.com/review/list/3491365?shelf=horror",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/121349196",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 6,
+                        "viewerHasLiked": null,
+                        "commentCount": 2
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.2Ag56DDIQCT-N_R-hpxIyQ",
+                        "creator": {
+                            "id": 2187043,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1528431476i/2187043._UX200_CR0,62,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 2003,
+                            "__typename": "User",
+                            "textReviewsCount": 3148,
+                            "name": "Mike (the Paladin)",
+                            "webUrl": "https://www.goodreads.com/user/show/2187043-mike-the-paladin",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.508597138859E12,
+                        "createdAt": 1.37536691E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.375555393E12,
+                        "text": "Look, I know a lot of people like this book and I'm sorry I just couldn't enjoy it. I almost went for 2 stars as the author goes for a poetic form pf prose and succeeds somewhat. The prose is nice but the story just never drew me in. <br /><br />I suppose part of it is that I've never found a zombie apocalypse book that I enjoy, like or care for. The same is true here. From the opening pages where the broken backed dead, yet not dead body is found on the beach to the end where \"we\" put a bullet through the head of a zombie that's someone either coming or going it's a zombie book.<br /><br />To me it was just another zombie book. I know a lot of you like, even love this genre of books I just never have. Over and over I get books that others love and I'm at best indifferent about.<br /><br />So, if you like the zombie genre then here's another probably good entry. Enjoy. it's just not for me. ",
+                        "rating": 1,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/2187043?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "skimmed",
+                                        "webUrl": "https://www.goodreads.com/review/list/2187043?shelf=skimmed",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "zombie-apocalypse",
+                                        "webUrl": "https://www.goodreads.com/review/list/2187043?shelf=zombie-apocalypse",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/683051383",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 6,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.85diqECaN2LdLee9cTXJeA",
+                        "creator": {
+                            "id": 3094317,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1641523309i/3094317._UX200_CR0,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 480,
+                            "__typename": "User",
+                            "textReviewsCount": 2842,
+                            "name": "Tori",
+                            "webUrl": "https://www.goodreads.com/user/show/3094317-tori",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.478614340124E12,
+                        "createdAt": 1.28302074E12,
+                        "spoilerStatus": true,
+                        "lastRevisionAt": 1.285110634E12,
+                        "text": "Originally posted at Smexybooks-<a target=\"_blank\" rel=\"noopener nofollow\" href=\"http://www.smexybooks.com/2010/09/review-reapers-are-angels-by-alden-bell.html\">http://www.smexybooks.com/2010/09/rev...</a><br /><br />Favorite Quote: ”A fellowship that talks in a language of death. His will to destroy her and her will to remain undestroyed-both things are beautiful and holy.”<br /><br />For the last twenty years, civilization has balanced on the edge of a precipice. A deadly plague struck converting the living and dead into the living dead. The true living barricade themselves in enclaves, eking out a meager survival. Temple, a young woman, wanders this desolate landscape, clinging to her memories and demons. She doesn’t remember a time before zombies but she does remember a kind old man who took care of her until tragedy struck. As Temple starts her own journey towards redemption and salvation she will encounter many forms of life. Some who will help her, some who will hurt her, and some that will open her heart and finally lead her home.<br /><br />The Reapers Are The Angels is a dark and mesmerizing southern gothic tale of self discovery, survival, and redemption. Set in a post apocalypse setting, we are shown a society 25 years after a zombie uprising that is slowly beginning to rise from the ashes. It all take place through the thoughts and stories of a young girl named Temple. Born into this desolate world, it tugs and twists you to hear her thoughts on what is essentially the norm for her. I found Temple to be an endearing and fantastically strong protagonist. She operates on another level of consciousness. Swift, calm, and sure-she deals with each calamity as it comes along. Due to past tragedies, she is constantly alluding to the evil she believes taints her soul, fearing more what she believes she is then anything else that roams this dangerous landscape. She’s a wanderer and a recluse, exiling herself from society as punishment for her perceived transgressions. Reading her thoughts on God, redemption, and salvation struck a chord with me. She is so young physically ( 15-16 years old) but so much older soul wise.<br /><br />When her private sanctuary is breached, she strikes out to find a place for her to live in the solitude she craves and expects. She encounters a group that has commandeered a section of the city and have begun to rebuild a life for themselves. When Temple is assaulted and extracts her own brand of justice, she is forced to leave the settlement to escape retribution. I found it rather poetic that she acknowledges feeling more at home out in the world among the Zombies and unknown then among other humans. She often states that at least with Zombies you know where you stand. That their desires and wants are simple and easy to understand.<br /><br />When Temple finds Maury, her chance at redemption is given. A victim and a mute, Maury sparks Temple’s long buried humanity and she sees a way to save Maury and possibly herself. But her past follows her; dogging her every step, demanding his pound of flesh. Moses and Temple have a unique and complicated relationship. On one hand he wants her dead. On the other hand he also cares for her; rather like a father. He is the one person who truly sees and understands what Temple is. It’s a convoluted relationship that holds your attention and forces you to look beyond the words written into the very hearts of these two characters.<br /><br />As we follow Temple, Maury, and Moses across country we are treated to Temple’s thoughts in of the present and the past. The prose of this story is astounding. We see what Temple might have become had she not been born in such a tremulous time. There are certain scenes that show us the “what if’s and could have beens”. The bleak landscape that Mr. Bell paints is underscored with faint hints of hope, humor, and love that takes a simple story about zombies and the aftermath and elevates it to a much higher standard. The writing style is written in a detached 1st person style so you feel more as though your being read to which further empathizes the almost fairytale quality of the story.<br /><br />The ending is both sad and illuminating in its conclusion. While I knew what was going to happen... what had to happen, I was not prepared for the emotion that it engulfed in me when it happened. While I have never been a post apocalypse or Zombie genre reader, this story captured my interest, held my attention, and left me thinking about it long after I was through.This is definitely a keeper for my book shelf.",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/3094317?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [],
+                            "webUrl": "https://www.goodreads.com/review/show/119006342",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 5
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.NuWXi0eLVY-q2ZUhZ0hr0g",
+                        "creator": {
+                            "id": 52140415,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1456273682i/52140415._UX200_CR0,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 35,
+                            "__typename": "User",
+                            "textReviewsCount": 56,
+                            "name": "Becky",
+                            "webUrl": "https://www.goodreads.com/user/show/52140415-becky",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.532060494953E12,
+                        "createdAt": 1.531062437484E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.531921561726E12,
+                        "text": "Wow............ this was excellent! that good just to get the second book! Temple is definitely my hero☺☺😊",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/52140415?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [],
+                            "webUrl": "https://www.goodreads.com/review/show/1631370032",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.8hBkvbaF3PAtewXcx1v_7Q",
+                        "creator": {
+                            "id": 3846743,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1411566466i/3846743._UX200_CR0,34,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 1150,
+                            "__typename": "User",
+                            "textReviewsCount": 2251,
+                            "name": "Althea Ann",
+                            "webUrl": "https://www.goodreads.com/user/show/3846743-althea-ann",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.469482103766E12,
+                        "createdAt": 1.349535316E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.391009115E12,
+                        "text": "Re-read – this time for post-apocalyptic book club. I appreciated the novel more, this time around. After finding myself recommending it to quite a few people, as well as my book club; it definitely deserved a re-read, either way. Bell’s use of language is wonderful, and he convincingly creates the voice of an uneducated, illiterate young woman who, though scarred, is intelligent and sensitive.<br />Her random wanderings through a zombie-filled wasteland are given shape by her ‘fated’ encounter with Moses Todd, her nemesis and reflection. (Is there a Moby Dick / Ahab dynamic going on here? Maybe, if you look at it from the whale’s perspective.) <br />In many ways, Moses is like what Temple might have grown to be. But their bond is based on the fact that in extremis, people can desperately hang on to things, certain principles, to give continued life meaning – but the things they hang on to can be wrong and ultimately meaningless.<br />I still think the mutant hillbillies in the woods were a bit much, and the weakest part of the book. But there’s enough going on here that a second look is worthwhile. There's a lot of symbolism (Jewish/Old Testament-style), and more going on than the surface indicates.<br /><br />I've just discovered that there's now a sequel, as well - 'Exit Kingdom' - I'm going to look for it.<br />_____ \t<br /><br />Read from October 28 to November 01, 2012 <br />NOT a post-apocalyptic book club selection - but I felt like it ought to have been! It really fit in with most of the books that get selected for my club meetings... except, of course, the guy doing the selecting is not a big fan of zombies, and well, There Are Zombies.<br />Zombies aside, the book reminded me a little of Marcel Theroux's 'Far North,' and I know I've encountered that grotesque, bloated, frighteningly insectoid caricature of a mother figure before...<br /><br />Told from the point of view of a young girl who's never known anything but a violent, post-apocalyptic landscape full of zombies; the book successfully captures both her grief and trauma, and the way in which she takes bizarre and threatening occurrences in stride.<br /><br />Like many books in this genre, the plot follows a meandering and circuitous path through wasteland, allowing the reader to encounter a series of odd situations, along with the protagonist. Temple (the girl in question) is wracked with an inarticulate grief over the loss of a boy who may have been her brother, and feels compelled to try to become the temporary guardian of a mentally disabled man she encounters. The attempt to get him to safety becomes her guiding force.<br /><br />Overall, it was quite good, but I felt that the latter portion of the book went a bit over the top and got off track.(One supernatural premise is good. Throwing an extra layer in as a twist toward the end of a book just strains it a bit.) ",
+                        "rating": 4,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/3846743?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [],
+                            "webUrl": "https://www.goodreads.com/review/show/428734752",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.WbSe9Zj-XHohoIBr1B2e2g",
+                        "creator": {
+                            "id": 2499261,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1729050954i/2499261._UX200_CR0,33,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 163,
+                            "__typename": "User",
+                            "textReviewsCount": 803,
+                            "name": "rachel",
+                            "webUrl": "https://www.goodreads.com/user/show/2499261-rachel",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.597943813086E12,
+                        "createdAt": 1.320022311E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.405878172E12,
+                        "text": "One of the thoughts that has been cemented pretty firmly in my mind for a while is that despite loving literature of the South, I do not love Cormac McCarthy. I love to hate his snobbery about comma usage and his disdain for flowery writing (which I am sure is code for \"women's writing,\" as it often is with these self-important men). The humorlessness of the author gets superimposed onto his work, extending my annoyance to not only his opinions but his books too. <br /><br />So as soon as the characters in <i>The Reapers are the Angels</i> start talking about fate, and Moses keeps talking about how he \"has\" to kill Temple even though it's clear he has little heart for the brother she killed in self defense <i>and</i> that he respects her drive, I'm like, \"Oh great. Here we go. We're going to be knocking off McCarthy now.\" And clearly that is my FAVORITE THING EVER.<br /><br />For the majority of the book, this opinion remained unwavering. I started to full-on hate it when Temple finds mutants in the swamp, because do we really need to add to <i>that</i> stereotype of the South? (See? Told you I get unreasonably annoyed with the McCarthy knockoffs.)<br /><br />But by the end of the book, something about Temple's love for America the Beautiful had gotten to me, just as it got to Moses. Because that is another opinion that is very close to my heart, the love of our landscape of palm trees and swamps and lighthouses and skyscrapers and deserts. And waterfalls. Temple fantasizes about someday seeing Niagara Falls, and her wanderlust is a reason that she can't ever settle down in a safe house or city and why she heads back out onto the road, zombies and all. This is one aspect of the zombie book that I never thought of: for those of us who'd lose our minds if we had to stay in one place forever, how strong would that urge be post-apocalypse if our lives were at risk?<br /><br />I am also glad that I read reviews while reading that pointed out the allegorical roles of Moses and Maury. Temple is obligated to save Maury because she failed to save the boy Malcolm who depended on her, that I got. But those of you who understood that Moses is a metaphor for her personal demons, her inability to let the mistakes of her past go -- thank you for helping me to appreciate the book more, to be less annoyed at what seemed the purposelessness of his pursuit.<br /><br />I try to rate books based on how successful they are at being what they are. This is a successful zombie book and also a successful replication of McCarthy's themes and style (but with fewer made-up words and a more mainstream folksiness), and my personal prejudice is towards liking one of those things but emphatically not the other. And that's why it's three stars. ",
+                        "rating": 2,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/2499261?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "2011",
+                                        "webUrl": "https://www.goodreads.com/review/list/2499261?shelf=2011",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/229226412",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.eYfRnGR9482kiad-UQNKuQ",
+                        "creator": {
+                            "id": 3255548,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1275413869i/3255548._UY200_CR33,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 383,
+                            "__typename": "User",
+                            "textReviewsCount": 2005,
+                            "name": "AH",
+                            "webUrl": "https://www.goodreads.com/user/show/3255548-ah",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.472009221996E12,
+                        "createdAt": 1.310468363E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.337944168E12,
+                        "text": "WARNING – Do not eat while reading this book!<br /><br />I have mixed feelings about The Reapers are the Angels. On one hand, I found it had a very different literary style to what I have grown used to. It drove me absolutely bonkers at first. Where were the quotation marks? On the other hand, once the story picked up, it was compelling enough to keep me reading. That said the first 100 pages were slow going for me. The lack of quotation marks was distracting – I had to reread several passages. But I stuck with it, and I am glad I did.<br /><br />This is a dark world overrun by zombies, or slugs and meatskins as the main character liked to call them. It is also a dangerous world and the main character Temple has been alone for a while. When a zombie washes ashore on her island, she kills what’s left of him, packs up her stuff in a cooler, and swims to the mainland. This is one plucky heroine, extremely smart and resourceful. She also has some amazing survival skills for a young woman.<br /> <br />A few things bothered me about this book. We never really learn why the zombies came about. Perhaps this is because the story is told from the point of Temple and she can’t remember a world without zombies. I was also surprised that despite the lack of resources, there seemed to be an ample supply of electricity and an almost unlimited supply of gasoline and snacks at service stations along the route that Temple drove. I also found it astounding that in this world there was some sort of order among the survivors, especially since I was expecting anarchy.<br /><br />I did like the scene where Temple rescued Maury for a parade of zombies. This seemed to be a first for Temple, looking out for others rather than just for herself. I also loved the scene where Temple and Maury get on the train and head west. That, for me, represented a tiny bit of hope that their condition would improve. If there is anything that a post-apocalyptic novel needs, it would be some sort of hope for the future. This book has that spark of hope.<br /><br />The ending really got to me. I was so angry by the end of the book. You can’t do this to me, leave me like this. Even though this wasn’t my favorite book, I’d recommend The Reapers Are The Angels to people who like dark, post-apocalyptic zombie books. I’d be interested in reading more books by this author too. <br /><br /><b>Zombie week continues as Regina and I discuss this book on <a href=\"http://badassbookreviews.com/review-the-reapers-are-the-angels-by-alden-bell/\" rel=\"nofollow noopener\">Badass Book Reviews.</a> Check it out!</b><br /><br />",
+                        "rating": 3,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/3255548?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "zombies",
+                                        "webUrl": "https://www.goodreads.com/review/list/3255548?shelf=zombies",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "dark",
+                                        "webUrl": "https://www.goodreads.com/review/list/3255548?shelf=dark",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "horror",
+                                        "webUrl": "https://www.goodreads.com/review/list/3255548?shelf=horror",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "zzread-may-2012",
+                                        "webUrl": "https://www.goodreads.com/review/list/3255548?shelf=zzread-may-2012",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "post-apocalyptic",
+                                        "webUrl": "https://www.goodreads.com/review/list/3255548?shelf=post-apocalyptic",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/184233185",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 5
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.aMOFtSogrQfhecHj6VJKxg",
+                        "creator": {
+                            "id": 1254714,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1513279210i/1254714._UY200_CR49,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 268,
+                            "__typename": "User",
+                            "textReviewsCount": 858,
+                            "name": "Steve",
+                            "webUrl": "https://www.goodreads.com/user/show/1254714-steve",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.472084530959E12,
+                        "createdAt": 1.287923081E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.416507245E12,
+                        "text": "It's never a good sign when you start getting annoyed with the main character's voice around page 50. But that's what happened to me as each page brought me one more whopper of spunky southern grrrlspeak from Temple “Mary Sarah” Williams, a Ghurkha knife wielding piece of whipass. I’m being harsh here, but that’s probably because I did feel early on that Alden Bell’s <i>The Reaper’s Are the Angels</i> had genuine promise. Bell can write, and he can write beautifully. The first 15 pages are quite lyrical, and that includes one zombie head mashing scene. Part of this is due to the obvious homage to Cormac McCarthy’s book, <i>The Road</i>. The book opens with Temple contemplating fish in the water, and God, which, if you have read McCarthy’s book, contains a similar scene. Shortly after that there is a reference to Temple’s gun, which has two bullets. Again, this seems to be a tip of the hat to McCarthy’s book, where there is also a gun with two bullets (though those two bullets are freighted with a lot more meaning). OK. I’m still on board. This homage seemed genuine, not calculating (not yet). But then Temple opens her mouth and never shuts up. Now we’re beyond McCarthy and we’re into Harper Lee territory, with a post apocalyptic Scout talking sassy and tough (I hate to make that comparison, because the original Scout is a great literary character). She kills a man (named Abraham), and her brother (Moses Todd ) vows revenge – just on principle (since he knew his brother had “issues”), and stalks the land (<i>Night of the Hunter</i>). Flannery O’Connor, Poe and his Usher (or Masque of Red Death) house, Romero, King, Faulkner and his Benjy, it just gets endless because it’s often so obvious, and the result is that this avalanche of influences drowns the novel out. (And I’m not even getting into the mixed signals with Biblical names.) I have no doubt this book is going to be popular for many (lovers of Cherie Priest take note), but it didn’t work for me. If you want to do zombies, I recommend the more modest – and honest effort by Brian Keene, <i>The Rising</i>. ",
+                        "rating": 2,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/1254714?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "fiction",
+                                        "webUrl": "https://www.goodreads.com/review/list/1254714?shelf=fiction",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "horror-and-dark-fiction",
+                                        "webUrl": "https://www.goodreads.com/review/list/1254714?shelf=horror-and-dark-fiction",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "sci-fi-and-fantasy",
+                                        "webUrl": "https://www.goodreads.com/review/list/1254714?shelf=sci-fi-and-fantasy",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/127655866",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.67WrGRhuf271cg9SEVyC8g",
+                        "creator": {
+                            "id": 4404986,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1299823285i/4404986._UY200_CR33,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 104,
+                            "__typename": "User",
+                            "textReviewsCount": 808,
+                            "name": "Maria",
+                            "webUrl": "https://www.goodreads.com/user/show/4404986-maria",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.522328080543E12,
+                        "createdAt": 1.314177823E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.336652046E12,
+                        "text": "I highly recommend <a href=\"http://bookchilla.wordpress.com/2012/05/10/book-review-the-reapers-are-the-angels-by-alden-bell/\" rel=\"nofollow noopener\">The Reapers are the Angels</a>.<br /><br />*****<br /><br />It will always be the zombie books that will make me cry. So strange. But it's true. There was <a href=\"https://goodreads.com/book/show/7094569.Feed__Newsflesh_Trilogy___1_\" title=\"Feed (Newsflesh Trilogy, #1) by Mira Grant\" rel=\"noopener\">Feed</a>, then <a href=\"https://goodreads.com/book/show/9917998.Dust___Decay__Benny_Imura___2_\" title=\"Dust &amp; Decay (Benny Imura, #2) by Jonathan Maberry\" rel=\"noopener\">Dust &amp; Decay</a>, and now, <i>The Reapers are the Angels</i>. two days has passed since i finished this book and yet... i was still devastated. =(<br /><br /><b>Temple</b> is uniquely at home at zombie-infested America. Even more fascinating is her being uncomfortable in those enclaves filled with people trying to just get by. She rather be travelling and smelling the rotted and acrid smell of the undead. She's going to my list of the best kick-*ass heroines ever! Another strong-willed and skilled girl who I will worship for her tenacity and guile to stay alive.<br /><br />Somehow, Temple and <b>Moses Todd</b> has what I call a weird and f*cked-up relationship. It is by no means friendly and yet there's a mutual respect. How the author develop their relationship is unbelievable. It was my favorite aspect of the story. =)<br /><br /><i>The Reapers are the Angels</i> hit me hard. Darkly humorous and grotesquely satisfying, it will make any zombie fans ask for more gore. and some. <i>Mr. Alden Bell, you made me cry. But I still want more.</i>",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/4404986?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "dystopia",
+                                        "webUrl": "https://www.goodreads.com/review/list/4404986?shelf=dystopia",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "ya",
+                                        "webUrl": "https://www.goodreads.com/review/list/4404986?shelf=ya",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "recommended",
+                                        "webUrl": "https://www.goodreads.com/review/list/4404986?shelf=recommended",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "2012-favorites",
+                                        "webUrl": "https://www.goodreads.com/review/list/4404986?shelf=2012-favorites",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/201661974",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 4
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.xIcxb9z83Au09tz_AWfxrQ",
+                        "creator": {
+                            "id": 4626742,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1471219092i/4626742._UY200_CR33,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 0,
+                            "__typename": "User",
+                            "textReviewsCount": 586,
+                            "name": "Tammy K.",
+                            "webUrl": "https://www.goodreads.com/user/show/4626742-tammy-k",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.644207154624E12,
+                        "createdAt": 1.378782493E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.378783262E12,
+                        "text": "I really did not like this book. I read it, because it was the Book Of The Month in the Zombies! group. I wanted to stop reading it so many times but managed to push myself to the ending so that I could participate in the group read. <br />While I could hen peck this book to its very bindings, it is probably best to offer up a shorter list of dislikes.<br />*Near Rape of a minor. Followed by sex between a 15 year old girl and a 25 year old man. Both graphically described. Although this is fiction, or rather just because this is fiction does not excuse this inappropriate behavior. To write a story where you are suggesting that this is \"perfectly normal, natural, and acceptable\" is NOT Acceptable. <br />*Weak character development.. It isn't until the last couple chapters that we even get to know the main character's past and can begin to understand her motivations. During that brief section, the information needed to bond with the character was thrown out like a shopping list.<br />*Wandering and pointless plot.. There always seems to be just one more thing to do, but by doing that one more thing nothing is accomplished. <br />*Horrible plot resolution ... this one just slowly Peters out ending in a spiraling death.<br />*Difficult to read ... the slang, inconsistencies in behavior of the characters, logic flaws, and well ..general syntax of this book made it a \"Chore\" to read. I was fighting myself the whole way through to complete this book. <br />",
+                        "rating": 1,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/4626742?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "zombies-general",
+                                        "webUrl": "https://www.goodreads.com/review/list/4626742?shelf=zombies-general",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "botm-zombies",
+                                        "webUrl": "https://www.goodreads.com/review/list/4626742?shelf=botm-zombies",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/715957110",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 2
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.TWVP3cMRzC08PNJfa-wcpA",
+                        "creator": {
+                            "id": 11494588,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1450327909i/11494588._UX200_CR0,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 249,
+                            "__typename": "User",
+                            "textReviewsCount": 1537,
+                            "name": "Tandie",
+                            "webUrl": "https://www.goodreads.com/user/show/11494588-tandie",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.562700002238E12,
+                        "createdAt": 1.508569127451E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.508570991123E12,
+                        "text": "I have strange feelings about this story. The mc, Temple, experienced and inflicted so much violence that she was permanently damaged. Her ability to find miracles and wonders all around while living in a world full of monsters grabbed my heart. The writing was simple and lovely. Temple isn't literate, yet has a way of stating simple truths in a profound way. <br /><br />“See, God is a slick god. He makes it so you don’t miss out on nothing you’re supposed to witness firsthand.\"<br /><br />Post apocalyptic zombie gunslinger feel to the book. It's not a HEA, but it sure made me think. I don't understand Moses Todd, even after finishing. <br /><br />“It’s a wonder how he’s trackin me, but you can’t put nothing past these southern boys. They just sit around waiting for somebody to kill their brother so they can get started on some vengeance. It’s like a dang vocation with them.”<br /><br />I do like how the author twisted kinship into the enemy mix. Maybe even a weird father-ish sort of love? So, even with the setting and the way things turn out in the end, there was this pervasive feeling of hope the entire time.<br /><br />“Through the tiny broken-out place in the window above, she sees a touch of movement. She focuses on it, watching it inch along, little more than a finger shadow against the daylight. It’s a green caterpillar, and it pokes its way through the hole in the glass and along the sill of the window.<br />And she thinks:<br />Ain’t no hell deep enough to keep heaven out.\"<br />",
+                        "rating": 4,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/11494588?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "dystopian-or-futuristic",
+                                        "webUrl": "https://www.goodreads.com/review/list/11494588?shelf=dystopian-or-futuristic",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "young-adult",
+                                        "webUrl": "https://www.goodreads.com/review/list/11494588?shelf=young-adult",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "zombies",
+                                        "webUrl": "https://www.goodreads.com/review/list/11494588?shelf=zombies",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "creepy-in-the-right-way",
+                                        "webUrl": "https://www.goodreads.com/review/list/11494588?shelf=creepy-in-the-right-way",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "fight-like-a-girl",
+                                        "webUrl": "https://www.goodreads.com/review/list/11494588?shelf=fight-like-a-girl",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "i-kill-u",
+                                        "webUrl": "https://www.goodreads.com/review/list/11494588?shelf=i-kill-u",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "bloody-violent",
+                                        "webUrl": "https://www.goodreads.com/review/list/11494588?shelf=bloody-violent",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/824065472",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 1
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.q7yCoa6O_BBRXQKwlwFs5Q",
+                        "creator": {
+                            "id": 369069,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1616204156i/369069._UY200_CR1,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 0,
+                            "__typename": "User",
+                            "textReviewsCount": 1955,
+                            "name": "Andi",
+                            "webUrl": "https://www.goodreads.com/user/show/369069-andi",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.472036952681E12,
+                        "createdAt": 1.329922381E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.330829912E12,
+                        "text": "This book will stay with me for a long time. Temple is an extraordinary 15-year old girl who was born after the zombie apocalypse began a quarter of a century ago. This life is all she knows. She believes she is evil because of events that happened in her past, but she is far from it. She is constantly on the move due to unfortunate circumstances, but she isn't afraid to connect up with others when the opportunity arises.<br /><br />The world is hard and bleak, but not as hopeless as that of \"The Road.\" That's what I really liked about this book - it was realistic, and yet there was still hope.<br /><br />Temple's courage, strength, and perseverance are astounding. To have been through so much and yet never give up, i admire her for that. While brutal and capable of killing the \"meatskins\" (her name for the zombies) without so much as a thought, she is also extremely protective of those weaker than herself. All this from a 15-year old.<br /><br />I was confused as to how there could still be food or gasoline available in convenience stores, 25 years after the apocalypse, or even power for that matter. That was never explained, and it was my only hang-up with this book. <br /><br />Regardless, I think this is one of the better zombie books out there. And the ending felt right for some reason. This was a winner for me!",
+                        "rating": 4,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/369069?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [],
+                            "webUrl": "https://www.goodreads.com/review/show/281994739",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.wPoZjJp7rZtIgSouGjLIdg",
+                        "creator": {
+                            "id": 1256869,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1654575844i/1256869._UX200_CR0,33,200,200_.jpg",
+                            "isAuthor": true,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 551,
+                            "__typename": "User",
+                            "textReviewsCount": 1351,
+                            "name": "Heather ~*dread mushrooms*~",
+                            "webUrl": "https://www.goodreads.com/user/show/1256869-heather-dread-mushrooms",
+                            "contributor": {
+                                "id": "kca://author/amzn1.gr.author.v1.-ZDglR76RNvFUluiQpQ9TA",
+                                "works": {
+                                    "totalCount": 20,
+                                    "__typename": "ContributorWorksConnection"
+                                },
+                                "__typename": "Contributor"
+                            }
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.61080006313E12,
+                        "createdAt": 1.311655016E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.423256402E12,
+                        "text": "I haven't put a book on my \"exquisite\" shelf since <i>Lolita</i>. In fact, until now, that has been the only book occupying that shelf. No other book I've read even came close to being considering for that shelf. That is a high honor shelf. I wasn't initially going to put <i>The Reapers Are the Angels</i> on it, but then I was like, you know what? I'm going to do it. The writing is just too amazing, which, in my opinion, is what counts most in exquisiteness.<br /><br />Bell didn't use quotation marks, which I was initially skeptical of, since I often find that particular gimmick annoying. This time I barely even noticed it. I was so caught up in the beautiful passages describing the ravaged world and the ones waxing philosophical. This book was just gorgeous. I can't believe how many crappy books make it to the attention of the mainstream public while others like this escape the notice of most. It's a crime.<br /><br />I think this book would make an awesome movie. It's not action-packed, but there is plenty of action. And I bet the visuals would just be stunning.<br /><br />Alden Bell, where have you been all my life?",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/1256869?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "whoa",
+                                        "webUrl": "https://www.goodreads.com/review/list/1256869?shelf=whoa",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "zombies",
+                                        "webUrl": "https://www.goodreads.com/review/list/1256869?shelf=zombies",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "exquisite",
+                                        "webUrl": "https://www.goodreads.com/review/list/1256869?shelf=exquisite",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "good-title",
+                                        "webUrl": "https://www.goodreads.com/review/list/1256869?shelf=good-title",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "fiction-lit",
+                                        "webUrl": "https://www.goodreads.com/review/list/1256869?shelf=fiction-lit",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "series",
+                                        "webUrl": "https://www.goodreads.com/review/list/1256869?shelf=series",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/189830050",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1._dqHawC3wwju4aAdAnv_IQ",
+                        "creator": {
+                            "id": 778299,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1515706079i/778299._UX200_CR0,29,200,200_.jpg",
+                            "isAuthor": true,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 50,
+                            "__typename": "User",
+                            "textReviewsCount": 354,
+                            "name": "Michele Lee",
+                            "webUrl": "https://www.goodreads.com/user/show/778299-michele-lee",
+                            "contributor": {
+                                "id": "kca://author/amzn1.gr.author.v1.67y_42nfL5c9PUrybSUd-w",
+                                "works": {
+                                    "totalCount": 17,
+                                    "__typename": "ContributorWorksConnection"
+                                },
+                                "__typename": "Contributor"
+                            }
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.472939500435E12,
+                        "createdAt": 1.302571482E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.302571497E12,
+                        "text": "The Reapers are the Angel is one of those books that people aren't going to expect, and that many otherwise avid horror fans might end up over looking. A gothic southern tale of a girl who lives alone after the zombie uprising it does for zombies what Interview with a Vampire did for vampires.<br />\tTemple is barely a teenager, left to survive in a failing world. She's illiterate, had never know family or a world without zombies yet she's searching the world for something she can't put a name to. Despite her very different way of thinking she's easily an Everyman for a wide swath of readers who find this book.<br />\tIntensely strange, deeply emotional this is a zombie tale not to be missed, or underestimated in the sea of knock off biohorror apocalypse books. I cannot recommend this book highly enough, but readers should beware that Bell's intoxicating tale will pull you in and make it very hard to let go. An absolute must have for modern horror collections.<br />\tContains: language, violence, attempted rape, sex",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/778299?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "2011",
+                                        "webUrl": "https://www.goodreads.com/review/list/778299?shelf=2011",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "horror-suspense",
+                                        "webUrl": "https://www.goodreads.com/review/list/778299?shelf=horror-suspense",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "wishlist",
+                                        "webUrl": "https://www.goodreads.com/review/list/778299?shelf=wishlist",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "favorites",
+                                        "webUrl": "https://www.goodreads.com/review/list/778299?shelf=favorites",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "reviewed",
+                                        "webUrl": "https://www.goodreads.com/review/list/778299?shelf=reviewed",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/160389989",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 4,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.sDNLzu3lC8bX_F1PFkQQug",
+                        "creator": {
+                            "id": 2838930,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1593001269i/2838930._UX200_CR0,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 69,
+                            "__typename": "User",
+                            "textReviewsCount": 546,
+                            "name": "Jess",
+                            "webUrl": "https://www.goodreads.com/user/show/2838930-jess",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.472102101273E12,
+                        "createdAt": 1.31047647E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.319410198E12,
+                        "text": "WOWZERS!! This was really amazing, I don't know, apparently I do not give Zombie books enough credit because this was not what I was expecting. The language was fantastic, Temple as the flawed hero who would never in a million years ever get how brave she is,just a stunning character and I could not put this down because I needed to know what happened to her next, read it in one day, quick read so so so good. Perfect for Halloween or anytime ever. ",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/2838930?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "its-been-emotional",
+                                        "webUrl": "https://www.goodreads.com/review/list/2838930?shelf=its-been-emotional",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "cillian-murphy",
+                                        "webUrl": "https://www.goodreads.com/review/list/2838930?shelf=cillian-murphy",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "dystopia-fruitopia",
+                                        "webUrl": "https://www.goodreads.com/review/list/2838930?shelf=dystopia-fruitopia",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/184252477",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 4
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.oAJsP_snPop5VcQZGE6jng",
+                        "creator": {
+                            "id": 16589223,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1538330192i/16589223._UY200_CR50,0,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 60,
+                            "__typename": "User",
+                            "textReviewsCount": 1137,
+                            "name": "Cudeyo",
+                            "webUrl": "https://www.goodreads.com/user/show/16589223-cudeyo",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.598536917006E12,
+                        "createdAt": 1.446757723E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.447580038E12,
+                        "text": "Aunque ambientado en un mundo invadido por los zombies, estos no son más que la excusa para narrar una historia apocalíptica de búsqueda sin esperanza, en un mundo indiferente que intenta revivir el pasado sin conseguirlo.<br /><br />Resulta algo deprimente, agobiante, y con poca acción. La relación amistad-odio entre Temple y su perseguidor es algo perturbador.",
+                        "rating": 3,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/16589223?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [],
+                            "webUrl": "https://www.goodreads.com/review/show/1434715823",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 5,
+                        "viewerHasLiked": null,
+                        "commentCount": 0
+                    },
+                    "__typename": "BookReviewsEdge"
+                },
+                {
+                    "node": {
+                        "__typename": "Review",
+                        "id": "kca://review:goodreads/amzn1.gr.review:goodreads.v1.4Qc-uhv_whXR_g75lN_Iaw",
+                        "creator": {
+                            "id": 3695758,
+                            "imageUrlSquare": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/users/1369500256i/3695758._UX200_CR0,37,200,200_.jpg",
+                            "isAuthor": false,
+                            "viewerRelationshipStatus": null,
+                            "followersCount": 274,
+                            "__typename": "User",
+                            "textReviewsCount": 470,
+                            "name": "Suzanne",
+                            "webUrl": "https://www.goodreads.com/user/show/3695758-suzanne",
+                            "contributor": null
+                        },
+                        "recommendFor": null,
+                        "updatedAt": 1.572826047135E12,
+                        "createdAt": 1.360992668E12,
+                        "spoilerStatus": false,
+                        "lastRevisionAt": 1.424018424E12,
+                        "text": "I was surprised earlier this year to see a beautiful 5-star review for this book from Bennet. But knowing her to be a reader and reviewer of sophistication and exquisite taste, I allowed for the fact that I could be missing something here and should set aside my prejudices to explore that possibility. I’m so glad I did. I have always believed genuine quality transcends genre. I cannot stand country music, for instance, but I can listen to Patsy Cline all day long. Sports bore me silly, but a video of Michael Jordan leaping toward a basket is pure ballet. So with this book. It just happens to be set in a zombie-infested place.<br /><br />As Goodreader Wendy Darling has said, this book is “gruesome and beautiful.” The writing on the first page took my breath away. That is always a good sign. But although there were some lovely images to begin with, don’t be fooled. A lot of this is not pretty. <br /><br />I loved the heroine, 15-year-old Temple, right away for her ability, even in the midst of anguish to know, even when confronting the horrors of death and destruction, one should look around. See what you can see. There will still be wonder. “There’s a music to the world and you got to be listening, otherwise you’ll miss it sure.” Temple carries a boatload of guilt and believes herself to be evil, but also believes in grace: “You can cherish a miracle without deserving one,” she says. “We’re all of us beholden to the beauty of the world.” <br /><br />Temple understands and revels in the rhythms of the natural world, as surely as she holds more practical skills: how to hotwire a car, or wield a wicked knife blade. She cannot read, but has fine-honed survival skills in this new world. <br /><br />Temple meets a succession of ruined people in ruined cities, not to mention her dodging constantly the really ruined people, the zombies, or slugs as they are called, in reference to their somnambulant lumbering about. But there are others, still living, almost as dangerous. <br /><br /> <i>“She leaves him sitting there, glancing back just once before she goes through the stairwell door and observing how the cloud of smoke from his cigar gets pulled in wisps out the dark gaping hole in the glass wall – as though it is his soul, too large for his massive frame and seeping out the pores of his skin and wandering circuitous back into the wilderness where it knows itself true among the violent and the dead.” </i><br /><br />Occasionally she meets someone who threatens to dislodge her from her hard emotion-proof shell. She comes across a man who is developmentally disabled and who has just lost his only local friend or relation. Resisting the temptation to care for him, she tries to chase him away. <br /><br /><i>“I ain’t a kind and gentle person,” she tells him. “Then she drives away, gripping the wheel tight – and the thick throb of pain comes back into her hand, and she grabs on to it and doesn’t let it go because it feels like an earned suffering.”</i><br /><br />But she relents. She goes back for him and he becomes her travelling companion and, later, her mission.<br /><br />The apocalypse-blasted landscape through which they travel is reverting to wilderness; former cities are desolate and filled with gruesome relics of whatever destroyed the world we knew. <br /><br /><i>“Spreading out from the main avenues like twigs from branches, the broken asphalt roads give way to brick lanes, brittle barbecue shacks with torn screen doors and collapsing roofs tucked into alleyways behind big white colonials hidden behind gates of thick ivy, which in turn, are secreted behind the commercial districts of block stores and low-stacked parking garages. In the middle of town is a square that must have been the site of some final showdown. There’s a huge marble fountain, long dry, filled with eviscerated corpses gone to bone and black. In the middle of the fountain is a marble statue of an angel, her wingtips pointing still unbroken toward the sky, and a dead man hangs slung around her neck as though he would ride with her to heaven except that his lower half below his waist is gone, which makes him look like an absurd hand puppet tossed profanely over something holy.\" </i><br /><br /><br />There are more graphic depictions of zombies and their prey in this city abandoned to the slugs, “the monstrous and the perverse, the like of which Temple had never seen before,” and you get the feeling she’s seen some pretty bad stuff before she encountered this particular “carnival of death.” She is finding<br /><br /><i>“the grimmest and most degenerate manifestation of this blighted humanity on this blighted earth – beasts of our long pasts, spilling out of whatever hell we have made for them like the army of the damned, choked and gagging and rotted and crusty and eminently pathetic, yes, brutally, conspicuously, outrageously pathetic.” </i> <br /><br />We don’t know what internal demons Temple is harboring for a while, although we learn they are there though the observations of other characters such as James Gierson, scion of a wealthy family that has managed to stay safe in their well-stocked and isolated mansion. “You’re a soldier, he says to her. “Like me. You’ve done things you’re not proud of. You’ve got a fierce shame in you, little girl. I can see it—burning in your gut like a jet engine. Is that why you move so fast and so hard?” <br /><br />She does keep moving and resists developing attachments, although there are flashbacks to her earlier childhood as an orphan when she did have an acquired family of sorts and she relives the memories of those she used to love who were taken from her. She recalls a conversation with a boy who may have been her brother (she is not sure). As she believes in the essence of beauty in the world, she also, somehow, still has faith in “progress.” She remembers telling Malcolm, “There’s still progress. . . inside you.” “In me?” “Sure. In the history of the planet, there ain’t never been a kid like you before. A kid who’s seen the things you seen. A kid who fought the same fights you fought. You’re a new thing altogether. A brand new thing.” She can believe this and pass it on, amidst the horror of everything that surrounds her. <br /><br />Even her nemesis Moses Todd recognizes and respects in her her need to keep striving, to participate in life, and her appreciation for life that refuses to be put down; she is a fellow-traveler who knows, in spite of everything, “the world is a marvelment.” <br />",
+                        "rating": 5,
+                        "shelving": {
+                            "shelf": {
+                                "name": "read",
+                                "webUrl": "https://www.goodreads.com/review/list/3695758?shelf=read",
+                                "__typename": "Shelf"
+                            },
+                            "taggings": [
+                                {
+                                    "tag": {
+                                        "name": "kick-ass-heroines",
+                                        "webUrl": "https://www.goodreads.com/review/list/3695758?shelf=kick-ass-heroines",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                },
+                                {
+                                    "tag": {
+                                        "name": "creature-feature",
+                                        "webUrl": "https://www.goodreads.com/review/list/3695758?shelf=creature-feature",
+                                        "__typename": "Tag"
+                                    },
+                                    "__typename": "Tagging"
+                                }
+                            ],
+                            "webUrl": "https://www.goodreads.com/review/show/537485628",
+                            "__typename": "Shelving"
+                        },
+                        "likeCount": 4,
+                        "viewerHasLiked": null,
+                        "commentCount": 6
+                    },
+                    "__typename": "BookReviewsEdge"
+                }
+            ],
+            "pageInfo": {
+                "prevPageToken": "NzM1LDEzMDc2NTE2NzIwMDA",
+                "nextPageToken": "NDY0LDEzNjA5OTI2NjgwMDA",
+                "__typename": "PageInfo"
+            },
+            "__typename": "BookReviewsConnection"
+        }
+    },
+    "errors": [
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                0,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                1,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                2,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                3,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                4,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                5,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                6,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                7,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                8,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                9,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                10,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                11,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                12,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                13,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                14,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                15,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                16,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                17,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                18,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                19,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                20,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                21,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                22,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                23,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                24,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                25,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                26,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                27,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                28,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                29,
+                "node",
+                "viewerHasLiked"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 57,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerHasLiked on type Review"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                0,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                1,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                3,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                4,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                6,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                7,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                5,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                8,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                9,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                10,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                12,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                13,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                11,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                14,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                16,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                17,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                15,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                18,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                19,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                20,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                22,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                21,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                24,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                23,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                25,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                26,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                27,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                28,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                29,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        },
+        {
+            "path": [
+                "getReviews",
+                "edges",
+                2,
+                "node",
+                "creator",
+                "viewerRelationshipStatus"
+            ],
+            "data": null,
+            "errorType": "Unauthorized",
+            "errorInfo": null,
+            "locations": [
+                {
+                    "line": 85,
+                    "column": 3,
+                    "sourceName": null
+                }
+            ],
+            "message": "Not Authorized to access viewerRelationshipStatus on type User"
+        }
+    ]
+}
