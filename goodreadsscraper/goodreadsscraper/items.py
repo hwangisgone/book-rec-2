@@ -35,6 +35,8 @@ class ReivewItem(scrapy.Item):
     rating = scrapy.Field()  
     linkjs = scrapy.Field()
     bookId = scrapy.Field()
+    tokens = scrapy.Field()
+    allReviews = scrapy.Field()
 
 class UserItem(scrapy.Item):
     userId = scrapy.Field()
