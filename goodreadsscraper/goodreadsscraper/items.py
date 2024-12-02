@@ -46,6 +46,7 @@ class UserItem(scrapy.Item):
     avgRating = scrapy.Field()
     profileUrl = scrapy.Field()
     imageUrl = scrapy.Field()
+    rating = scrapy.Field()
 
 
 
