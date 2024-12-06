@@ -135,6 +135,7 @@ class ReivewSpider(scrapy.Spider):
         for book_id in range(start_id, end_id + 1):
             url = f'{base_url}{book_id}'
             yield scrapy.Request(url=url, callback=self.parse)
+        
 
     def parse(self, response):
         loader = ItemLoader(item=ReivewItem(), response=response)
@@ -174,15 +175,6 @@ class ReivewSpider(scrapy.Spider):
             # loader = ItemLoader(item=ReivewItem(), response=response)
             loader.add_value('isbn', isbn)
             loader.add_value('isbn13', isbn13)
-
-            if book_info.get('details', {}).get('isbn') is None:
-                url_shelves = book_stats.get('editions', {}).get('webUrl')
-                if url_shelves:
-                    yield scrapy.Request(
-                            url=url_shelves,
-                            callback=self.parse_shelves,
-                            meta={'loader': loader}  # Pass the loader to the next method
-                    )
             
             for review_data in reviews:
                 # Extract user data for the review
@@ -193,6 +185,17 @@ class ReivewSpider(scrapy.Spider):
                     'user': user_data.get('id'),
                     'rating': review_data.get('rating')
                 })
+            if book_info.get('details', {}).get('isbn') is None:
+                url_shelves = book_stats.get('editions', {}).get('webUrl')
+                if url_shelves:
+                    yield scrapy.Request(
+                            url=url_shelves,
+                            callback=self.parse_shelves,
+                            meta={'loader': loader}  # Pass the loader to the next method
+                    )
+            else:
+                item = loader.load_item()
+                yield item
         
 
     def parse_shelves(self, response):
@@ -217,77 +220,4 @@ class ReivewSpider(scrapy.Spider):
         }
 
         yield ordered_item
-    
-    # def parse_js(self, response):
-    #     loader = response.meta['loader']
-    #     tokens = response.meta.get('tokens', None) 
-    #     allreviews = response.meta.get('allReviews', [])
-    #     # Extract the text content of the JavaScript file
-    #     js_content = response.text
-        
-    #     # Regular expression to match JSON inside JSON.parse
-    #     pattern = r'JSON\.parse\(\s*\'(.*?)\'\s*\)'
-
-    #     # Extract the JSON string
-    #     matches = re.findall(pattern, js_content, re.DOTALL)
-
-    #     json_string = matches[1]
-    #     data = json.loads(json_string)
-
-    #     # Extract the 'graphql' object from 'Production'
-    #     production_graphql = data["Production"]["graphql"]
-    #     api_key = production_graphql["apiKey"]
-    #     endpoint = production_graphql["endpoint"]
-
-    #     headers = {
-    #         "Content-Type": "application/json",
-    #         "x-api-key": api_key
-    #     }
-
-    #     yield scrapy.Request(
-    #         url=endpoint,
-    #         callback=self.parse_graphql,
-    #         method="POST",
-    #         headers=headers,
-    #         body=json.dumps(payload),  # Add the initial GraphQL payload
-    #         meta={'loader': loader, 'nextPageToken': tokens, 'allReviews': allreviews}  # Store the nextPageToken as None for the first request
-    #     )
-
-    
-    # def parse_graphql(self, response):
-    #     loader = response.meta['loader']
-    #     all_reviews = response.meta.get('allReviews', [])
-
-    #     # Parse the JSON response
-    #     data = response.json()
-    #     reviews = data.get("data", {}).get("getReviews", {}).get("edges", [])
-
-    #     all_reviews.extend([review["node"] for review in reviews])
-
-    #     next_page_token = data.get("data", {}).get("getReviews", {}).get("pageInfo", {}).get("nextPageToken")
-        
-    #     extracted_data = [{"id": review["creator"]["id"], "rating": review["rating"]} for review in all_reviews]
-    #     # self.logger.info(f"Extracted {(extracted_data)} ")
-
-    #     if not next_page_token:
-    #         # Process or save the reviews when no more pages
-    #         extracted_data = [{"user": review["creator"]["id"], "rating": review["rating"]} for review in all_reviews]
-
-    #         loader.add_value('rating', extracted_data)
-
-    #         yield loader.load_item()
-    #         # return
-    #     else: 
-    #       # Set the next "after" token for the next request
-    #       payload["variables"]["pagination"]["after"] = next_page_token
-
-    #       # Make the next request with the updated "after" token
-    #       yield scrapy.Request(
-    #           url=response.url,
-    #           callback=self.parse_graphql,
-    #           method="POST",
-    #           headers=response.request.headers,
-    #           body=json.dumps(payload),
-    #           meta={'loader': loader, 'nextPageToken': next_page_token, 'allReviews': all_reviews }
-    #       )
-        
+         
