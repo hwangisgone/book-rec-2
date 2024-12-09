@@ -125,14 +125,20 @@ class ReivewSpider(scrapy.Spider):
     }
 
     # start_urls = ['https://www.goodreads.com/book/show/1']
+    def __init__(self, start_id=50000, end_id=51000, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.start_id = int(start_id)
+        self.end_id = int(end_id)
+
+        if self.start_id > self.end_id:
+            raise ValueError("start_id must be less than or equal to end_id")
 
     # Define the range of book IDs to crawl
     def start_requests(self):
-        start_id = 50000
-        end_id = 50010
         base_url = 'https://www.goodreads.com/book/show/'
 
-        for book_id in range(start_id, end_id + 1):
+        for book_id in range(self.start_id, self.end_id + 1):
             url = f'{base_url}{book_id}'
             yield scrapy.Request(url=url, callback=self.parse)
         
@@ -156,6 +162,9 @@ class ReivewSpider(scrapy.Spider):
             if book_key:
                 book_info = book_data[book_key]
                 book_stats = book_data[book_work]
+            else:
+                print("Book not available:", book_key)
+                return None
 
             isbn = book_info.get('details', {}).get('isbn')
             isbn13 = book_info.get('details', {}).get('isbn13')
