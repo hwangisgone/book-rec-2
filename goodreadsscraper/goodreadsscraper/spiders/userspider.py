@@ -7,7 +7,16 @@ from goodreadsscraper.items import UserItem
 class UserSpider(scrapy.Spider):
     name = "user_spider"
     allowed_domains = ["goodreads.com"]
-    start_urls = ["https://www.goodreads.com/user/show/3039709"]
+    # start_urls = ["https://www.goodreads.com/user/show/3039709"]
+    
+    def start_requests(self):
+        start_id = 1
+        end_id = 20
+        base_url = 'https://www.goodreads.com/book/show/'
+
+        for book_id in range(start_id, end_id + 1):
+            url = f'{base_url}{book_id}'
+            yield scrapy.Request(url=url, callback=self.parse)
     
     custom_settings = {
         'ROBOTSTXT_OBEY': False,  # Disable robots.txt
