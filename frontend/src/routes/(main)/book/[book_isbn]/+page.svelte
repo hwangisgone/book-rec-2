@@ -38,13 +38,30 @@
 	HTML HERE - {number1} - {number2}
 </div>
 
-<div>Write review here</div>
+<div class="p-4 m-4 bg-blue-100 div1 bg-primary-500">Write review here</div>
 
-<button onclick={increase}>
-	Button 1
-</button>
 
+<div class="p-4 bg-secondary-500">Write review here</div>
+<div class="p-4 bg-tertiary-500">Write review here</div>
+
+<!-- justify-between -->
+
+<div class="p-4 flex items-center">
+	<button class="btn variant-filled-primary " onclick={increase}>
+		Button 1
+	</button>
+
+	<button class="btn variant-filled-secondary " onclick={increase}>
+		Button 1
+	</button>
+
+	<button class="btn variant-filled-tertiary " onclick={increase}>
+		Button 1
+	</button>
+
+	<div>Something</div>
+</div>
 
 <style>
-	
+
 </style>
