@@ -13,8 +13,7 @@
       <h2 class="text-xl font-bold mb-4">Dashboard</h2>
       <ul class="space-y-2">
         <li>
-          <a aria-current="page"
-            href="/">
+          <a aria-current="page" href="/">
             <!-- <Home class="mr-2" /> -->
             Home
           </a>
@@ -66,10 +65,18 @@
 <style>
 	a[aria-current="page"] {
 		background-color: rgba(var(--color-primary-500) / 1);; /* blue-500 */
-		color: white;		
+		color: white;
 	}
 
+  a:hover {
+    background-color: rgba(var(--color-primary-700) / 1);; /* blue-500 */
+    color: white;
+  }
 	a {
-		@apply flex items-center p-2 rounded transition-colors;
+		display: flex; /* flex */
+    align-items: center; /* items-center */
+    padding: 0.5rem; /* p-2 (Tailwind default spacing scale translates to 0.5rem for "2") */
+    border-radius: 0.25rem; /* rounded (Tailwind's "rounded" equals 0.25rem by default) */
+    transition: color 0.2s, background-color 0.2s;
 	}
 </style>

@@ -8,6 +8,8 @@
 	let { children } = $props();
 </script>
 
+<svelte:options runes={true} />
+
 {#if $navigating}
   <!-- 
     Loading animation for next page since svelte doesn't show any indicator. 

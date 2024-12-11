@@ -9,7 +9,7 @@
       <h1 class="text-5xl font-bold">This is embarrassing...</h1>
       <p class="py-6 text-2xl">There was an error: {$page?.error?.message}</p>
       <div>
-        <a href="/" class="btn btn-primary btn-wide">Return Home</a>
+        <a href="/" class="btn variant-filled btn-primary btn-wide">Return Home</a>
       </div>
     </div>
   </div>
