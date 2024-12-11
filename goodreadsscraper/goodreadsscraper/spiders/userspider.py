@@ -8,7 +8,7 @@ from goodreadsscraper.items import UserItem
 class UserSpider(scrapy.Spider):
     name = "user_spider_02"
     allowed_domains = ["goodreads.com"]
-    start_urls = ["https://www.goodreads.com/user/show/1"]
+    start_urls = ["https://www.goodreads.com/user/show/49286709"]
     
     
     custom_settings = {

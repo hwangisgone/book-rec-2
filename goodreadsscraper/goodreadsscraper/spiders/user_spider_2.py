@@ -10,24 +10,14 @@ class UserSpider(scrapy.Spider):
     name = "user_spider_03"
     allowed_domains = ["goodreads.com"]
     # Thêm nhiều URL tại đây
-    # start_urls = [
-    #     "https://www.goodreads.com/user/show/1",
-    #     "https://www.goodreads.com/user/show/2",
-    #     "https://www.goodreads.com/user/show/3",
-    # ]
+    base_url =  "https://www.goodreads.com/user/show/"
+    start_urls = "https://www.goodreads.com/user/show/49286709-ayesha-van-den-brink"
+    # for id in (1, 1001):
+    #     start_urls.append(base_url + str(id))
     
-    start_urls= ['https://www.goodreads.com/book/show/5.Harry_Potter_and_the_Prisoner_of_Azkaban', 
-     'https://www.goodreads.com/book/show/8.Harry_Potter_Boxed_Set_Books_1_5', 
-     'https://www.goodreads.com/book/show/10.Harry_Potter_Collection', 
-     'https://www.goodreads.com/book/show/17.The_Hitchhiker_s_Guide_to_the_Galaxy', 
-     'https://www.goodreads.com/book/show/10.Harry_Potter_Collection', 
-     'https://www.goodreads.com/book/show/1.Harry_Potter_and_the_Half_Blood_Prince', 
-     'https://www.goodreads.com/book/show/42844155-harry-potter-and-the-sorcerer-s-stone', 
-     'https://www.goodreads.com/book/show/2.Harry_Potter_and_the_Order_of_the_Phoenix', 
-     'https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets']
 
-    # with open('data/clean/list_source.pkl', 'rb') as file:
-        # start_urls = pickle.load(file)
+    # # with open('data/clean/list_source.pkl', 'rb') as file:
+    #     # start_urls = pickle.load(file)
 
     custom_settings = {
         'ROBOTSTXT_OBEY': False,  # Disable robots.txt

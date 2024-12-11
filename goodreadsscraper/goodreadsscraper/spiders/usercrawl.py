@@ -7,13 +7,8 @@ from datetime import datetime
 class GoodreadsSpider(scrapy.Spider):
     name = "users"
     allowed_domains = ["goodreads.com"]
-    start_urls = ["https://www.goodreads.com/user/show/0753"]
-    def start_requests(self):
-        with open('data/clean/user_id.pkl', 'rb') as file:
-            loaded_list = pickle.load(file)
-
-        for url in loaded_list:
-            yield scrapy.Request(url=url, callback=self.parse)
+    start_urls ="https://www.goodreads.com/user/show/49286709-ayesha-van-den-brink"
+   
 
     def parse(self, response):
         # Parse the page using BeautifulSoup for more flexible parsing
