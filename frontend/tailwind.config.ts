@@ -1,5 +1,6 @@
 import { join } from 'path';
 import type { Config } from 'tailwindcss';
+import { EarthyTheme } from './src/earthy-theme';
 
 // 1. Import the Skeleton plugin
 import { skeleton } from '@skeletonlabs/tw-plugin';
@@ -23,7 +24,8 @@ export default {
 		skeleton({
 			themes: {
 				// Register each theme within this array:
-				preset: [ "skeleton", "gold-nouveau" ] 
+				preset: [ "skeleton"],
+				custom: [ EarthyTheme ]
 			}
 		})
 	]
