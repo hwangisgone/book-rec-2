@@ -32,8 +32,11 @@ class BookItem(scrapy.Item):
 class ReivewItem(scrapy.Item):
     isbn = scrapy.Field()
     isbn13 = scrapy.Field()
-    user = scrapy.Field()  
     rating = scrapy.Field()  
+    linkjs = scrapy.Field()
+    bookId = scrapy.Field()
+    tokens = scrapy.Field()
+    allReviews = scrapy.Field()
 
 class UserItem(scrapy.Item):
     userId = scrapy.Field()
@@ -43,6 +46,7 @@ class UserItem(scrapy.Item):
     avgRating = scrapy.Field()
     profileUrl = scrapy.Field()
     imageUrl = scrapy.Field()
+    rating = scrapy.Field()
 
 
 

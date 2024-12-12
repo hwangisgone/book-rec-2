@@ -45,7 +45,6 @@ class BookSpider(scrapy.Spider):
                 else:
                     series_name = None
 
-
                 # Use a loader to populate fields
                 loader = ItemLoader(item=BookItem(), response=response)
 
@@ -54,12 +53,8 @@ class BookSpider(scrapy.Spider):
 
                 # Extract total review count
                 total_reviews = reviews_data.get('totalCount', None)
-                print("log ", total_reviews)
-                # Add isbn and isbn13 first
                 loader.add_value('isbn', book_info.get('details', {}).get('isbn'))
                 loader.add_value('isbn13', book_info.get('details', {}).get('isbn13'))
-
-                # Add other values to the loader
                 loader.add_value('title', book_info.get('title'))
                 # loader.add_value('titleComplete', book_info.get('titleComplete'))
                 loader.add_value('author', author.get('name', {}))
@@ -67,7 +62,7 @@ class BookSpider(scrapy.Spider):
                 loader.add_value('imageUrl', book_info.get('imageUrl'))
                 loader.add_value('genres', [genre['genre']['name'] for genre in book_info.get('bookGenres', [])])
                 loader.add_value('publisher', book_info.get('details', {}).get('publisher'))
-                # loader.add_value('series', series_name)
+                loader.add_value('series', series_name)
                 loader.add_value('publishDate', book_info.get('details', {}).get('publicationTime'))
                 loader.add_value('numPages', book_info.get('details', {}).get('numPages'))
                 loader.add_value('language', book_info.get('details', {}).get('language', {}).get('name'))
@@ -81,7 +76,6 @@ class BookSpider(scrapy.Spider):
                 if book_info.get('details', {}).get('isbn') is None:
                     url_shelves = book_stats.get('editions', {}).get('webUrl')
                     if url_shelves:
-                        # Send a new request to the `url_shelves` with the loader
                         yield scrapy.Request(
                             url=url_shelves,
                             callback=self.parse_shelves,
@@ -94,13 +88,10 @@ class BookSpider(scrapy.Spider):
 
 
     def parse_shelves(self, response):
-        # Get the loader from meta
         loader = response.meta['loader']
 
         isbn13 = response.xpath('//div[div[contains(text(), "ISBN:")]]/div[@class="dataValue"]/text()').get(default='').strip()
-        # Extract ISBN10 from the span element inside the div
         isbn10 = response.xpath('//div[@class="dataRow"]//div[@class="dataValue"]/span[@class="greyText"]/text()').re_first(r'ISBN10:\s*(\d+)')
-
         # self.logger.info(f"Extracted ISBN13: {isbn13}, ISBN10: {isbn10}")
 
         # Add extracted values to the loader
@@ -109,10 +100,7 @@ class BookSpider(scrapy.Spider):
         if isbn10:
             loader.add_value('isbn', isbn10)
 
-        # Reorder the fields manually to make sure isbn and isbn13 are at the top
         item = loader.load_item()
-
-        # Create a new ordered dict for the item to ensure order
         ordered_item = {
             'isbn': item.get('isbn'),
             'isbn13': item.get('isbn13'),
