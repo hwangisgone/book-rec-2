@@ -1,11 +1,14 @@
 import os
 import json
+import math
+import argparse
 from dotenv import load_dotenv
 import requests
-import math
 
 # Load environment variables from .env file
 load_dotenv()
+
+max_retries = 3
 
 class GraphQLCrawler:
     def __init__(self, 
@@ -19,10 +22,6 @@ class GraphQLCrawler:
             url (str): GraphQL endpoint URL
             base_query (str): Base GraphQL query string with offset placeholder
             base_filename (str): Base name for output JSON files
-            start (int): Starting offset
-            end (int): Ending offset
-            step (int): Increment for each request
-            max_per_file (int): Maximum number of items to store before dumping to file
         """
         self.url = url
         self.base_query = base_query
@@ -38,10 +37,10 @@ class GraphQLCrawler:
         self.headers = {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            'Authorization': f'Bearer {self.auth_token}'
+            'Authorization': f'Bearer {auth_token}'
         }
     
-    def fetch_data(self, offset):
+    def fetch_data(self, offset, limit):
         """
         Fetch GraphQL data for specific offset
         
@@ -51,23 +50,40 @@ class GraphQLCrawler:
             list: Parsed GraphQL response items or empty list
         """
         
-        query = self.base_query.format('OFFSET', offset)
-        
-        try:
-            response = requests.post(
-                self.url, 
-                json={'query': query}, 
-                headers=self.headers
-            )
-            response.raise_for_status()
+        # query = self.base_query.format(OFFSET=offset, LIMIT=limit)
+        variables = {
+            'OFFSET_BOOK': offset,
+            'LIMIT_BOOK': limit
+        }
+        attempts = 0
+        while attempts < max_retries:
+            try:
+                response = requests.post(
+                    self.url, 
+                    json={'query': self.base_query, 'variables': variables}, 
+                    headers=self.headers
+                )
+                response.raise_for_status()
+                
+                response_data = response.json()
+
+                if 'errors' in response_data:
+                    error_message = response_data['errors'][0].get('message', 'Unknown error')
+                    raise requests.RequestException(error_message)
+
+                # Extract items from response (adjust based on your GraphQL schema)
+                data = next(iter(response_data.get('data', {}).values()), []) # Get data.something
+                return data
             
-            # Extract items from response (adjust based on your GraphQL schema)
-            data = response.json().get('data', {}).get('products', [])
-            return data
-        
-        except requests.RequestException as e:
-            print(f"GraphQL Request Error at offset {offset}: {e}")
-            return []
+            except requests.RequestException as e:
+                attempts += 1
+                print(f"GraphQL Request Error at offset {offset}: {e}")
+
+                if attempts < max_retries:
+                    print("Retrying...")
+                else:
+                    print("Max retries reached. Returning empty list.")
+                    return []
     
     def export_api_to_json(self, start_index, end_index, step):
         """
@@ -86,55 +102,115 @@ class GraphQLCrawler:
 
         collected_data = []
         for offset in range(start_index, end_index, step):
-            items = self.fetch_data(offset)
+            items = self.fetch_data(offset, step)
+            # print(items)
 
             if not items:
-                break
+                continue
 
             collected_data.extend(items)
 
             # Write JSON file
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(collected_data, f, indent=2, ensure_ascii=False)
-
-            print(f"Offset: {offset}")
+                print(f"Offset: {offset}")
         
-        print(f"Exported: {filename}")
+        print(f"Count: {len(collected_data)} Exported: {filename}")
+
+            
+            
+        
     
 
 def main():
+    parser = argparse.ArgumentParser(description="Export Hardcover API data to JSON in chunks. Will get book data sorted from most rated to least rated (minimum 100 ratings).")
+    parser.add_argument("-s", "--start", type=int, default=0, help="The starting value of the range (default: 0).")
+    parser.add_argument("-e", "--end", type=int, default=50, help="The ending value of the range (default: 50).")
+    parser.add_argument("-t", "--step", type=int, default=1, help="Step size for the range (default: 1).")
+    parser.add_argument("-m", "--max_per_file", type=int, default=10, help="Maximum number of entries per file (default: 10).")
+
+    args = parser.parse_args()
+
+    if args.start > args.end:
+        parser.error("Start value (-s/--start) cannot be greater than end value (-e/--end).")
+
+    global_start = args.start
+    global_end = args.end
+    step = args.step
+    max_per_file = args.max_per_file
+    
+    print(f'Starting ({global_start},{global_end},{step},max: {max_per_file})')
+
     # Example GraphQL query with offset placeholder
     base_query = '''
-    query {
-        products(offset: {OFFSET}, limit: 100) {
-            id
+    query MyQuery($OFFSET_BOOK: Int!, $LIMIT_BOOK: Int!) {
+      books(
+        where: {ratings_count: {_gte: 100}}
+        order_by: {ratings_count: desc}
+        limit: $LIMIT_BOOK
+        offset: $OFFSET_BOOK
+      ) {
+        cached_tags
+        cached_image
+        cached_contributors
+        reviews_count
+        ratings_count
+        ratings_distribution
+        id
+        dto_combined
+
+        user_books(where: {rating: {_is_null: false}}) {
+          rating
+          user_id
+          user {
+            username
             name
-            price
-            category
+          }
         }
+      }
     }
     '''
-    
+        # slug
+        # editions {
+        #   id
+        # }
+
+    user_book_query = '''
+    query GetUserBook($OFFSET_BOOK: Int!, $LIMIT_BOOK: Int!) {
+      user_books(
+        where: {rating: {_is_null: false}}
+        order_by: {date_added: asc}
+        limit: $LIMIT_BOOK
+        offset: $OFFSET_BOOK
+      ) {
+        rating
+        book_id
+        user_id
+        date_added
+        edition_id
+      }
+    }
+    '''
+    # Count total is 1631328
+    # Get 200000 each request/file
+    # python getdata.py -s 0 -e 1631000 -t 200000 -m 200000
+
     # Initialize and run crawler
     crawler = GraphQLCrawler(
-        url='https://your-graphql-endpoint.com/graphql',
-        base_query=base_query,
-        base_filename='hardcover',
+        url='https://api.hardcover.app/v1/graphql',
+        base_query=user_book_query,
+        base_filename='hardcover_rating',
     )
 
-    global_start = 0
-    global_end   = 100
-    max_per_file = 50
-    step         = 10
-
     total_range = global_end - global_start
-    num_files = math.ceil(total_range / (max_per_file * step))
+    num_files = math.ceil(total_range / max_per_file)
         
     for file_index in range(num_files):
         file_start = global_start + (file_index * max_per_file)
         file_end = min(file_start + max_per_file, global_end)
 
         crawler.export_api_to_json(file_start, file_end, step)
+
 
 if __name__ == '__main__':
     main()
