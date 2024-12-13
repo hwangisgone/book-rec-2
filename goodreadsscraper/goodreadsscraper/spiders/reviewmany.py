@@ -125,7 +125,7 @@ class ReivewSpider(scrapy.Spider):
     }
 
     # start_urls = ['https://www.goodreads.com/book/show/1']
-    def __init__(self, start_id=50000, end_id=51000, *args, **kwargs):
+    def __init__(self, start_id=7001, end_id=10000, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.start_id = int(start_id)

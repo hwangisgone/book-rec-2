@@ -5,7 +5,14 @@ from goodreadsscraper.items import BookItem  # Replace with your actual item cla
 
 class BookSpider(scrapy.Spider):
     name = 'book_spider'
-    start_urls = ['https://www.goodreads.com/book/show/11468377']  # Replace with the actual URL
+    def start_requests(self):
+        start_id = 30001
+        end_id = 50000
+        base_url = 'https://www.goodreads.com/book/show/'
+
+        for book_id in range(start_id, end_id + 1):
+            url = f'{base_url}{book_id}'
+            yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
         # Extract JSON text from the <script> tag

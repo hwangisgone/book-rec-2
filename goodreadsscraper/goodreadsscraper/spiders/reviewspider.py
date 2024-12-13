@@ -124,7 +124,17 @@ class ReivewSpider(scrapy.Spider):
         'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
     }
 
-    start_urls = ['https://www.goodreads.com/book/show/1']
+
+
+    def start_requests(self):
+        start_id = 1
+        end_id = 50
+        base_url = 'https://www.goodreads.com/book/show/'
+
+        for book_id in range(start_id, end_id + 1):
+            url = f'{base_url}{book_id}'
+            yield scrapy.Request(url=url, callback=self.parse)
+
 
     def parse(self, response):
         # Extract JSON text from the <script> tag

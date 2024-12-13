@@ -2,4 +2,4 @@
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
 
 
-<button class="btn variant-filled">sm</button>
+<button class="btn variant-filled-primary">sm</button>

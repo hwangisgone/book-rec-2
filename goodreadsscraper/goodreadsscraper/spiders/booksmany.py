@@ -8,8 +8,8 @@ class BookSpider(scrapy.Spider):
 
     # Define the range of book IDs to crawl
     def start_requests(self):
-        start_id = 50000
-        end_id = 51000
+        start_id = 150000
+        end_id = 160000
         base_url = 'https://www.goodreads.com/book/show/'
 
         for book_id in range(start_id, end_id + 1):
