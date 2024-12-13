@@ -4,40 +4,15 @@
 
     import { ProgressBar } from '@skeletonlabs/skeleton';
     
+    let { data } = $props();
 
-	let dataBookExample = {
-    "isbn": "0976540606",
-    "isbn13": "9780976540601",
-    "title": "  Harry Potter Book Seven News: \"Half-Blood Prince\" Analysis and Speculation",
-    "author": "W. Frederick Zimmerman",
-    "description": "Through the magic of print-on-demand technology, this \"nimble\" guide to the work of best-selling author J. K. Rowling provides the latest news about the author and her works, updated whenever there are significant developments. Unlike a conventional book, for which editions are printed in quantity every couple of years, this \"living book\" goes through frequent \"mini-editions\" and is printed fresh whenever customers place an order. Purchasers are entitled to free PDF updates! An entirely new section of analysis with more than 75 new pages will be added shortly after the release of \"Harry Potter and the Half-Blood Prince\" on July 16, 2005.",
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1386921401i/9.jpg",
-    "publisher": "Nimble Books",
-    "publishDate": 1114498800000,
-    "numPages": 152,
-    "language": "English",
-    "reviewsCount": 1,
-    "averageRating": 3.89,
-    "ratingsCount": 38,
-    "ratingHistogram": [0, 6, 8, 8, 16],
-    "crawlSource": "https://www.goodreads.com/book/show/9.Unauthorized_Harry_Potter_Book_Seven_News",
-    "genres": [
-            "Fantasy",
-            "Young Adult",
-            "Fiction",
-            "Magic",
-            "Adventure",
-            "Supernatural",
-            "Childrens",
-            "Mystery",
-            "Middle Grade",
-            "Paranormal"
-        ]
-    }
+    let currentBook = data.book;
+    // Test: /book/9780590353403
 
-    
+    currentBook.averageRating = 0.7;
+    const dataBookExample = currentBook;
 
-    export let averageRating = dataBookExample.averageRating;
+    let averageRating = dataBookExample.averageRating;
     // Tạo mảng các sao, mỗi sao có trạng thái full (đầy), half (nửa), hoặc empty (rỗng)
     const stars = Array(5)
         .fill('empty')
@@ -79,7 +54,7 @@
       <div class="flex flex-col md:flex-row -mx-4">
           <div class="md:flex-2 px-3">
               <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                  <img class="w-full h-full object-cover" src={dataBookExample.imageUrl} alt="Product Image">
+                  <img class="w-full h-full object-cover" src={dataBookExample.image_url} alt="Product Image">
               </div>
               
               <div class="flex -mx-2 mb-4">
@@ -210,8 +185,9 @@
                                     </dl>
                                 </div>
                             </div>
-                            
                         </div>
+                        
+                    </div>
                     {/if}
 
                     <div class="flex flex-col gap-3">
