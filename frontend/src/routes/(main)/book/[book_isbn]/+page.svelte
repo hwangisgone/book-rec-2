@@ -186,8 +186,6 @@
                                 </div>
                             </div>
                         </div>
-                        
-                    </div>
                     {/if}
 
                     <div class="flex flex-col gap-3">
