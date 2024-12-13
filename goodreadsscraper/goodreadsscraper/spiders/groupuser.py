@@ -8,19 +8,21 @@ class UserSpider(scrapy.Spider):
     name = 'group_spider'
     
     # input url array here to crawl all user group 
-    start_urls = ['https://www.goodreads.com/group/85538-oprah-s-book-club-official/members']
+    start_urls = ['https://www.goodreads.com/group/85538-oprah-s-book-club-official/members',
+                  'https://www.goodreads.com/group/220-goodreads-librarians-group/members',
+                  'https://www.goodreads.com/group/1103665-booktok-x1f4da/members']
 
     def parse(self, response):
         for user in response.css('div.elementList'):
             loader = ItemLoader(item=UserItem(), selector=user)
             # Extract the relative URL and convert it to absolute URL
-            user_name = user.css('a.userName::attr(title)').get()
             href = user.css('a.userName::attr(href)').get()
             full_url = response.urljoin(href)
             match = re.search(r"/user/show/(\d+)-(\w+)", full_url)
             
             if match:
                 user_id = match.group(1)
+                user_name = match.group(2)
                 
             loader.add_value('userId', user_id)
             loader.add_value('name', user_name)
@@ -59,8 +61,6 @@ class UserSpider(scrapy.Spider):
             match = re.search(r"/user/show/(\d+)-(\w+)", canonical_link)
 
             if match:
-                user_id = match.group(1)
-                user_name = match.group(2)
                 image_tag = soup.select_one("td img")
 
             image_url = image_tag.get('src') if image_tag else None
