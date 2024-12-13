@@ -1,82 +1,82 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-  // Import icons from lucide-react or another icon library
-  // import { Home, Settings, User } from 'lucide-react';
+	import { page } from '$app/stores';
+	// Import icons from lucide-react or another icon library
+	// import { Home, Settings, User } from 'lucide-react';
 
-  	let { children } = $props();
+	let { children } = $props();
 </script>
 
 <div class="flex h-screen">
-  <!-- Sidebar -->
-  <aside class="w-64 shadow-md">
-    <nav class="p-4">
-      <h2 class="text-xl font-bold mb-4">Dashboard</h2>
-      <ul class="space-y-2">
-        <li>
-          <a aria-current="page" href="/">
-            <!-- <Home class="mr-2" /> -->
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="/profile">
-            <!-- <User class="mr-2" /> -->
-            Profile
-          </a>
-        </li>
-        <li>
-          <a href="/settings">
-            <!-- <Settings class="mr-2" /> -->
-            Settings
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </aside>
+	<!-- Sidebar -->
+	<aside class="w-64 shadow-md">
+		<nav class="p-4">
+			<h2 class="mb-4 text-xl font-bold">Dashboard</h2>
+			<ul class="space-y-2">
+				<li>
+					<a aria-current="page" href="/">
+						<!-- <Home class="mr-2" /> -->
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="/profile">
+						<!-- <User class="mr-2" /> -->
+						Profile
+					</a>
+				</li>
+				<li>
+					<a href="/settings">
+						<!-- <Settings class="mr-2" /> -->
+						Settings
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</aside>
 
-  <!-- Main content area -->
-  <div class="flex flex-col flex-1">
-    <!-- Header -->
-    <header class="shadow-sm px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-semibold">
-        {#if $page.url.pathname === '/'}
-          Dashboard
-        {:else if $page.url.pathname === '/profile'}
-          Profile
-        {:else if $page.url.pathname === '/settings'}
-          Settings
-        {/if}
-      </h1>
-      <div class="flex items-center space-x-4">
-        <!-- Add user menu or action buttons -->
-        <button class="text-white px-4 py-2 rounded">
-          Action
-        </button>
-      </div>
-    </header>
+	<!-- Main content area -->
+	<div class="flex flex-1 flex-col">
+		<!-- Header -->
+		<header class="flex items-center justify-between px-6 py-4 shadow-sm">
+			<h1 class="text-2xl font-semibold">
+				{#if $page.url.pathname === '/'}
+					Dashboard
+				{:else if $page.url.pathname === '/profile'}
+					Profile
+				{:else if $page.url.pathname === '/settings'}
+					Settings
+				{/if}
+			</h1>
+			<div class="flex items-center space-x-4">
+				<!-- Add user menu or action buttons -->
+				<button class="rounded px-4 py-2 text-white"> Action </button>
+			</div>
+		</header>
 
-    <!-- Page content -->
-    <main class="flex-1 p-6 overflow-y-auto">
-    	{@render children()}
-    </main>
-  </div>
+		<!-- Page content -->
+		<main class="flex-1 overflow-y-auto p-6">
+			{@render children()}
+		</main>
+	</div>
 </div>
 
 <style>
-	a[aria-current="page"] {
-		background-color: rgba(var(--color-primary-500) / 1);; /* blue-500 */
+	a[aria-current='page'] {
+		background-color: rgba(var(--color-primary-500) / 1); /* blue-500 */
 		color: white;
 	}
 
-  a:hover {
-    background-color: rgba(var(--color-primary-700) / 1);; /* blue-500 */
-    color: white;
-  }
+	a:hover {
+		background-color: rgba(var(--color-primary-700) / 1); /* blue-500 */
+		color: white;
+	}
 	a {
 		display: flex; /* flex */
-    align-items: center; /* items-center */
-    padding: 0.5rem; /* p-2 (Tailwind default spacing scale translates to 0.5rem for "2") */
-    border-radius: 0.25rem; /* rounded (Tailwind's "rounded" equals 0.25rem by default) */
-    transition: color 0.2s, background-color 0.2s;
+		align-items: center; /* items-center */
+		padding: 0.5rem; /* p-2 (Tailwind default spacing scale translates to 0.5rem for "2") */
+		border-radius: 0.25rem; /* rounded (Tailwind's "rounded" equals 0.25rem by default) */
+		transition:
+			color 0.2s,
+			background-color 0.2s;
 	}
 </style>

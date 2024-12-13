@@ -1,46 +1,76 @@
-<script lang='ts'>
-	import { Ratings, CodeBlock, RangeSlider } from '@skeletonlabs/skeleton';
-    import { icons } from './icons';
+<script lang="ts">
+	import {
+		Ratings,
+		CodeBlock,
+		RangeSlider,
+		type PopupSettings,
+		popup
+	} from '@skeletonlabs/skeleton';
+	import { icons } from './icons';
 
-    import { ProgressBar } from '@skeletonlabs/skeleton';
-    
-    let { data } = $props();
+	import { ProgressBar } from '@skeletonlabs/skeleton';
 
-    let currentBook = data.book;
-    // Test: /book/9780590353403
+	let { data } = $props();
 
-    currentBook.averageRating = 0.7;
-    const dataBookExample = currentBook;
+	const currentBook = data.book;
+	const rating10s = data.ratings;
+	const ratingInfo = data.ratings_info;
 
-    let averageRating = dataBookExample.averageRating;
-    // Tạo mảng các sao, mỗi sao có trạng thái full (đầy), half (nửa), hoặc empty (rỗng)
-    const stars = Array(5)
-        .fill('empty')
-        .map((_, i) => {
-            const rating = averageRating - i;
-            return rating >= 1 ? 'full' : rating >= 0.5 ? 'half' : 'empty';
-        });
+	console.log(data);
+	// Test: /book/9780590353403
 
-  // document.getElementById('book_image').src = dataBookExample.imageUrl;s
+	const ratingHistogram = [
+		ratingInfo.rating_05_count,
+		ratingInfo.rating_1_count,
+		ratingInfo.rating_15_count,
+		ratingInfo.rating_2_count,
+		ratingInfo.rating_25_count,
+		ratingInfo.rating_3_count,
+		ratingInfo.rating_35_count,
+		ratingInfo.rating_4_count,
+		ratingInfo.rating_45_count,
+		ratingInfo.rating_5_count
+	];
 
-      // Biến để theo dõi trạng thái ẩn/hiện
-    let isVisible = false;
+	let averageRating = ratingInfo.average_rating ?? 0;
+	// Tạo mảng các sao, mỗi sao có trạng thái full (đầy), half (nửa), hoặc empty (rỗng)
+	const stars = Array(5)
+		.fill('empty')
+		.map((_, i) => {
+			const rating = averageRating - i;
+			return rating >= 1 ? 'full' : rating >= 0.5 ? 'half' : 'empty';
+		});
 
+	// document.getElementById('book_image').src = currentBook.imageUrl;s
 
-    function toggleVisibility() {
-        isVisible = !isVisible;
-    }
+	// Biến để theo dõi trạng thái ẩn/hiện
+	let isVisible = $state(false);
 
-    // rating this book save in value.current, if != thi moi la rating
-    let value = { current: 0, max: 5 };
-    function iconClick(event: CustomEvent<{index:number}>): void {
-	    value.current = event.detail.index;
-    }
+	function toggleVisibility() {
+		isVisible = !isVisible;
+	}
+
+	// rating this book save in value.current, if != thi moi la rating
+	let value = $state({ current: 0, max: 5 });
+	function iconClick(event: CustomEvent<{ index: number }>): void {
+		value.current = event.detail.index;
+	}
+
+	function makePopup(popupId: string): PopupSettings {
+		return {
+			event: 'hover',
+			target: popupId,
+			placement: 'top'
+		};
+	}
+
+	// Icons
+	import StarIcon from 'lucide-svelte/icons/star';
 </script>
 
 <!-- <div>
 	HTML HERE - {number1} - {number2}
-   
+	 
 </div>
 
 <div class="p-4 m-4 bg-blue-100 div1 bg-primary-500">Write review here</div>
@@ -49,180 +79,164 @@
 	Button 1
 </button> -->
 
-<div class=" py-8">
-  <div class="mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row -mx-4">
-          <div class="md:flex-2 px-3">
-              <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                  <img class="w-full h-full object-cover" src={dataBookExample.image_url} alt="Product Image">
-              </div>
-              
-              <div class="flex -mx-2 mb-4">
-               
-                <Ratings bind:value={value.current} max={value.max} interactive on:icon={iconClick}>
-                    <svelte:fragment slot="empty">{@html icons.empty}</svelte:fragment>
-                    <svelte:fragment slot="half">{@html icons.half}</svelte:fragment>
-                    <svelte:fragment slot="full">{@html icons.full}</svelte:fragment>
-                </Ratings>
-                
-              </div>
+<!-- <div class="mx-auto px-4 py-8 sm:px-6 lg:px-8"> -->
+<div class="-mx-4 flex flex-col md:flex-row">
+	<div class="md:flex-2 px-3">
+		<div class="mb-4 h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700">
+			<img class="h-full w-full object-cover" src={currentBook.image_url} alt="Book Cover" />
+		</div>
 
-              <div class = "text-center"> Rating this book</div>
-          </div>
-          <div class="md:flex-1 px-4">
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">{dataBookExample.title}</h2>
-                <h5 class="text-2xl  text-gray-800 dark:text-white mb-2">
-                    {dataBookExample.author}
-                </h5>
-                <div class="flex p-1 rounded-lg w-auto space-x-1 lg:space-x-2">
-                    {#each stars as star, i}
-                    <button>
-                        {#if star === 'full'}
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 hover:text-yellow-600 w-7 h-auto fill-current " viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg> -->
-                        {@html icons.full}
-                        {/if}
-                        {#if star === 'half'}
-                        <!-- Half Star -->
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 w-7 h-auto fill-current hover:text-green-600" viewBox="0 0 16 16">
-                                <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
-                            </svg> -->
-                            {@html icons.half}
-                        {/if}
-                        {#if star === 'empty'}
-                        <!-- Empty Star -->
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 w-7 h-auto fill-current hover:text-green-600" viewBox="0 0 16 16">
-                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
-                            </svg> -->
-                            {@html icons.empty}
-                        {/if}
-                    </button>
-                    {/each}
-                    <span class="text-2xl font-medium ">
-                        {dataBookExample.averageRating.toFixed(1)} 
-                    </span>
-                    
-                </div>
-                <div class="font-sans md:font-serif text-align: center">
-                    {dataBookExample.ratingsCount} ratings - {dataBookExample.reviewsCount} reviews
-                </div>
-              
+		<div class="-mx-2 mb-4 flex">
+			<Ratings bind:value={value.current} max={value.max} interactive on:icon={iconClick}>
+				<svelte:fragment slot="empty">{@html icons.empty}</svelte:fragment>
+				<svelte:fragment slot="half">{@html icons.half}</svelte:fragment>
+				<svelte:fragment slot="full">{@html icons.full}</svelte:fragment>
+			</Ratings>
+		</div>
 
-              
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
-                    {dataBookExample.description}
-                </p>
-                <div class="mr-4">
-                    <span class="font-bold text-gray-700 dark:text-gray-300">Genres </span>
-                    <!-- <span class="text-gray-600 dark:text-gray-300">{dataBookExample.genres}</span> -->
-                </div>              
-                <div class="flex mb-4 gap-2">
-                    {#each dataBookExample.genres as thing}
-                        <div class="badge variant-filled">{thing}</div>
-                    {/each}
-                </div>
+		<div class="text-center">Rating this book</div>
+	</div>
 
-                <div>
-                    <!-- Nút bấm -->
-                    <button class = "font-medium" onclick={toggleVisibility}>
-                        {isVisible ?  'Book details \& Edition' : 'Book details \& Edition' }
-                        
-                    </button>
-                    <!-- Nội dung hiển thị/ẩn -->
-                    {#if isVisible == false}
-                        <div class="visible">
-                            <div class=" overflow-hidden ">
-                                <!-- <div class="px-4 py-5 sm:px-6">
-                                    <h3 class="text-lg leading-4 font-medium text-gray-900">
-                                        This edition
-                                    </h3> 
-                                </div> -->
-                                <div class="px-1 py-3 sm:p-0">
-                                    <dl class="sm:divide-y sm:divide-gray-200">
-                                        <div class="py-3 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                            <dt class="text-sm font-medium text-gray-500">
-                                                Format
-                                            </dt>
-                                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                                {dataBookExample.numPages} pages
-                                            </dd>
-                                        </div>
-                                        <div class="py-3 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                            <dt class="text-sm font-medium text-gray-500">
-                                                Published
-                                            </dt>
-                                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                                {dataBookExample.publishDate}
-                                            </dd>
-                                        </div>
-                                        <div class="py-3 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                            <dt class="text-sm font-medium text-gray-500">
-                                                ISBN
-                                            </dt>
-                                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                                {dataBookExample.isbn13}
-                                             
-                                            </dd>
-                                        </div>
-                                        <div class="py-3 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                            <dt class="text-sm font-medium text-gray-500">
-                                                Language
-                                            </dt>
-                                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                                {dataBookExample.language}
-                                            </dd>
-                                        </div>
+	<div class="flex flex-col gap-4 px-4 md:flex-1">
+		<div>
+			<h2 class="mb-2 text-2xl font-bold text-gray-800 dark:text-white">{currentBook.title}</h2>
+			<h5 class="mb-2 text-2xl text-gray-800 dark:text-white">
+				{currentBook.author}
+			</h5>
 
-                                        <div class="py-3 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                                            <dt class="text-sm font-medium text-gray-500">
-                                                Publisher
-                                            </dt>
-                                            <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                                                {dataBookExample.publisher}
-                                            </dd>
-                                        </div>
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
-                    {/if}
+			<div class="flex w-auto space-x-1 rounded-lg p-1 lg:space-x-2">
+				{#each stars as star, i}
+					<div>
+						{#if star === 'full'}
+							{@html icons.full}
+						{/if}
+						{#if star === 'half'}
+							{@html icons.half}
+						{/if}
+						{#if star === 'empty'}
+							{@html icons.empty}
+						{/if}
+					</div>
+				{/each}
+				<span class="text-2xl font-medium">
+					{averageRating.toFixed(1)}
+				</span>
+			</div>
 
-                    <div class="flex flex-col gap-3">
-                        <h1 class = "text-2xl font-semibold">Community reviews</h1>
-                    
-                        <div class="flex flex-col gap-2">
-                            {#each dataBookExample.ratingHistogram as rating, i}
-                                <div class="flex items-center">
-                                    <span class="text-sm font-medium ">{i + 1} star</span>
-                                    <div class="w-3/4 h-4 mx-2 bg-gray-200 rounded">
-                                    <div class="h-4 bg-yellow-400 rounded" style="width: {(rating/dataBookExample.ratingsCount * 100).toFixed(1)}%"></div>
-                                    </div>
-                                    <span class="text-sm font-medium text-gray-500">{rating} ({(rating/dataBookExample.ratingsCount * 100).toFixed(1)}%)</span>
-                                </div>
-                            
-                            {/each}
-                        </div>
-                    </div>
-                
-          </div>
+			<div class="text-align: center font-sans md:font-serif">
+				{ratingInfo.total_ratings} ratings - {0} reviews
+			</div>
+			<p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
+				{currentBook.description}
+			</p>
+		</div>
 
-          
-      </div>
-  </div>
+		<div>
+			<span class="mb-2 font-bold text-gray-700 dark:text-gray-300">Genres </span>
+			<!-- <span class="text-gray-600 dark:text-gray-300">{currentBook.genres}</span> -->
+			<div class="flex gap-2">
+				{#each currentBook.genres as thing}
+					<div class="variant-filled badge">{thing}</div>
+				{/each}
+			</div>
+		</div>
+
+		<div class="w-80">
+			<h1 class="mb-2 text-xl font-semibold">Community reviews</h1>
+
+			<div class="flex h-32 items-end gap-1 rounded border-2 px-1">
+				{#each ratingHistogram as count, index (index)}
+					{@const percentage = Math.ceil(Math.max(5, (count / ratingInfo.total_ratings) * 100))}
+
+					<span class="relative flex-1 rounded bg-yellow-400" style:height={`${percentage}%`}>
+						<!-- Hover -->
+						<span
+							class="absolute bottom-0 h-[7.8rem] w-full hover:bg-yellow-900/10"
+							use:popup={makePopup('popup' + index)}
+						>
+						</span>
+					</span>
+
+					<!-- Popup -->
+					<div class="variant-filled rounded p-2 duration-75" data-popup={'popup' + index}>
+						<span class="flex items-center"
+							>{count} ({((index + 1) / 2).toFixed(1)}
+							<StarIcon class="ml-1" size="1.2em" fill="gold" strokeWidth={2} />)
+						</span>
+						<div class="variant-filled arrow"></div>
+					</div>
+				{/each}
+			</div>
+
+			<div class="flex justify-between">
+				<span class="flex items-center"
+					>0.5
+					<StarIcon class="ml-1" style="color: gold" size="1.2em" fill="gold" strokeWidth={2} />
+				</span>
+				<span class="flex items-center"
+					>5
+					<StarIcon class="ml-1" style="color: gold" size="1.2em" fill="gold" strokeWidth={2} />
+				</span>
+			</div>
+		</div>
+
+		<!-- Nút bấm -->
+		<div>
+			<button class="text-xl font-semibold" onclick={toggleVisibility}>
+				{isVisible ? 'Book details & Edition' : 'Book details & Edition'}
+			</button>
+			<!-- Nội dung hiển thị/ẩn -->
+			{#if isVisible == false}
+				<div class="visible overflow-hidden">
+					<!-- <div class="px-4 py-5 sm:px-6">
+						<h3 class="text-lg leading-4 font-medium text-gray-900">
+							This edition
+						</h3> 
+					</div> -->
+					<div class="px-1 py-3 sm:p-0">
+						<dl class="sm:divide-y sm:divide-gray-200">
+							<div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-3">
+								<dt class="text-sm font-medium text-gray-500">Format</dt>
+								<dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+									{currentBook.num_pages} pages
+								</dd>
+							</div>
+							<div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-3">
+								<dt class="text-sm font-medium text-gray-500">Published</dt>
+								<dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+									{currentBook.publish_date_date}
+								</dd>
+							</div>
+							<div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-3">
+								<dt class="text-sm font-medium text-gray-500">ISBN</dt>
+								<dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+									{currentBook.ISBN_13}
+								</dd>
+							</div>
+							<div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-3">
+								<dt class="text-sm font-medium text-gray-500">Language</dt>
+								<dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+									{currentBook.language}
+								</dd>
+							</div>
+
+							<!--                                         <div class="py-3 sm:py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+								<dt class="text-sm font-medium text-gray-500">
+									Publisher
+								</dt>
+								<dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+									{currentBook.publisher}
+								</dd>
+							</div> -->
+						</dl>
+					</div>
+				</div>
+			{/if}
+		</div>
+	</div>
 </div>
 
-</div>
-
-
-
-
-
-<!-- <div class="p-4 bg-tertiary-500">Write review here</div> -->
-
-
+<!-- </div> -->
 
 <style>
-
-
 </style>

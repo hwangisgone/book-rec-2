@@ -18,9 +18,18 @@ declare global {
 		language?: string;
 		num_pages?: number;
 		publish_date_date?: Date;
-		genre: string[];
+		genres: string[];
 		series?: string;
-	}
+	};
+	type UserAccount = {
+		full_name: string;
+		account_source: 'goodreads' | 'hardcover' | 'new';
+	};
+	type Rating = {
+		rating_score: number;
+		ISBN_13: string;
+		user_account: UserAccount;
+	};
 }
 
 export {};
