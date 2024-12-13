@@ -5,15 +5,26 @@ from goodreadsscraper.items import BookItem  # Replace with your actual item cla
 
 class BookSpider(scrapy.Spider):
     name = 'book_spider'
-    def start_requests(self):
-        start_id = 30001
-        end_id = 50000
-        base_url = 'https://www.goodreads.com/book/show/'
 
-        for book_id in range(start_id, end_id + 1):
-            url = f'{base_url}{book_id}'
-            yield scrapy.Request(url=url, callback=self.parse)
+    # def start_requests(self):
+    #     start_id = 30001
+    #     end_id = 50000
+    #     base_url = 'https://www.goodreads.com/book/show/'
 
+    #     for book_id in range(start_id, end_id + 1):
+    #         url = f'{base_url}{book_id}'
+    #         yield scrapy.Request(url=url, callback=self.parse)
+
+    def start_requests(self): 
+        with open('file_after_crawl_from_user.json') as f: 
+            data = json.load(f) 
+            for entry in data: 
+                if 'rating' in entry: 
+                    for rating in entry['rating']: 
+                        book_url = rating.get('book_href', None) 
+                        if book_url: 
+                            yield scrapy.Request(url=book_url, callback=self.parse)
+                                                                                                                                                                                                                                                    
     def parse(self, response):
         # Extract JSON text from the <script> tag
         script_data = response.css('script#__NEXT_DATA__::text').get()
