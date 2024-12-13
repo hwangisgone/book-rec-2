@@ -17,14 +17,14 @@ class UserSpider(scrapy.Spider):
             loader.add_value('profileUrl', full_url)
 
             next_page = response.css('a.next_page[rel="next"]::attr(href)').get()
-            # if next_page:
-            #     next_page_url = response.urljoin(next_page)
-            #     # self.logger.info("link" , next_page_url)
-            #     yield scrapy.Request(
-            #         url=next_page_url,
-            #         callback=self.parse,
-            #         meta={'loader': loader}
-            #     )
+            if next_page:
+                next_page_url = response.urljoin(next_page)
+                # self.logger.info("link" , next_page_url)
+                yield scrapy.Request(
+                    url=next_page_url,
+                    callback=self.parse,
+                    meta={'loader': loader}
+                )
             yield loader.load_item()
 
   

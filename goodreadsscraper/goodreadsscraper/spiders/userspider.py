@@ -1,6 +1,7 @@
 import scrapy
 from bs4 import BeautifulSoup
 import re
+import json
 import pickle
 from scrapy.loader import ItemLoader
 from goodreadsscraper.items import UserItem
@@ -8,7 +9,7 @@ from goodreadsscraper.items import UserItem
 class UserSpider(scrapy.Spider):
     name = "user_spider_02"
     allowed_domains = ["goodreads.com"]
-    start_urls = ["https://www.goodreads.com/user/show/49286709"]
+    # start_urls = ["https://www.goodreads.com/user/show/49286709"]
     
     
     custom_settings = {
@@ -17,7 +18,13 @@ class UserSpider(scrapy.Spider):
         'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
     }
 
-    
+    def start_requests(self): 
+        with open('file_after_from_groupuser.json') as f: 
+            data = json.load(f) 
+            for entry in data: 
+                profile_url = entry.get('profileUrl', [None])[0] 
+                if profile_url: 
+                    yield scrapy.Request(url=profile_url, callback=self.parse)
 
     def parse(self, response):
         # Parse the page using BeautifulSoup for more flexible parsing
