@@ -1,1 +1,1 @@
-scrapy crawl review_spider -O data2.json
+scrapy crawl review_spider -O data_review150-160k.json
