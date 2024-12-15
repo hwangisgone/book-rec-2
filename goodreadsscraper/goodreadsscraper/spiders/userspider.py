@@ -7,11 +7,16 @@ from scrapy.loader import ItemLoader
 from goodreadsscraper.items import UserItem
 
 class UserSpider(scrapy.Spider):
-    name = "user_spider_02"
+    name = "user_spider"
     allowed_domains = ["goodreads.com"]
     # start_urls = ["https://www.goodreads.com/user/show/49286709"]
+    def __init__(self, inputfile="", *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.inputfile = inputfile
     
-    
+        if not self.inputfile:
+            raise Exception("Input file not provided.")
+
     custom_settings = {
         'ROBOTSTXT_OBEY': False,  # Disable robots.txt
         'DOWNLOAD_DELAY': 1,      # Add delay to reduce server load
@@ -19,8 +24,8 @@ class UserSpider(scrapy.Spider):
     }
 
     def start_requests(self): 
-        with open('file_after_from_groupuser.json') as f: 
-            data = json.load(f) 
+        with open(self.inputfile) as f: 
+            data = json.load(f)
             for entry in data: 
                 profile_url = entry.get('profileUrl', [None])[0] 
                 if profile_url: 
