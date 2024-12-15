@@ -14,9 +14,15 @@ class BookSpider(scrapy.Spider):
     #     for book_id in range(start_id, end_id + 1):
     #         url = f'{base_url}{book_id}'
     #         yield scrapy.Request(url=url, callback=self.parse)
+    def __init__(self, inputfile="", *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.inputfile = inputfile
+    
+        if not self.inputfile:
+            raise Exception("Input file not provided.")
 
     def start_requests(self): 
-        with open('file_after_crawl_from_user.json') as f: 
+        with open(self.inputfile) as f: 
             data = json.load(f) 
             for entry in data: 
                 if 'rating' in entry: 
