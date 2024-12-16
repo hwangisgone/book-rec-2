@@ -3,7 +3,7 @@ data-pipeline/**/*.json
 goodreadsscraper/**/*.json
 hardcoverapi/**/*.json
 *.csv
-
+*.jsonl
 
 
 # Python.gitignore
