@@ -102,6 +102,7 @@ class GraphQLCrawler:
 
         collected_data = []
         for offset in range(start_index, end_index, step):
+            # print(f"Offset {offset} test:")
             items = self.fetch_data(offset, step)
             # print(items)
 
@@ -109,6 +110,7 @@ class GraphQLCrawler:
                 continue
 
             collected_data.extend(items)
+
 
             # Write JSON file
             with open(filepath, 'w', encoding='utf-8') as f:
@@ -124,6 +126,7 @@ class GraphQLCrawler:
 
 def main():
     parser = argparse.ArgumentParser(description="Export Hardcover API data to JSON in chunks. Will get book data sorted from most rated to least rated (minimum 100 ratings).")
+    parser.add_argument("querytype", choices=['book','rating','user'], help="Type of query to make.")
     parser.add_argument("-s", "--start", type=int, default=0, help="The starting value of the range (default: 0).")
     parser.add_argument("-e", "--end", type=int, default=50, help="The ending value of the range (default: 50).")
     parser.add_argument("-t", "--step", type=int, default=1, help="Step size for the range (default: 1).")
@@ -139,41 +142,44 @@ def main():
     step = args.step
     max_per_file = args.max_per_file
     
-    print(f'Starting ({global_start},{global_end},{step},max: {max_per_file})')
+    print(f'Starting {args.querytype} ({global_start}-{global_end},step: {step},max: {max_per_file})')
 
     # Example GraphQL query with offset placeholder
-    base_query = '''
-    query MyQuery($OFFSET_BOOK: Int!, $LIMIT_BOOK: Int!) {
+    base_book_query = '''
+    query GetBook($OFFSET_BOOK: Int!, $LIMIT_BOOK: Int!) {
       books(
-        where: {ratings_count: {_gte: 100}}
-        order_by: {ratings_count: desc}
+        order_by: {id: asc}
         limit: $LIMIT_BOOK
         offset: $OFFSET_BOOK
       ) {
         cached_tags
         cached_image
         cached_contributors
-        reviews_count
-        ratings_count
-        ratings_distribution
         id
-        dto_combined
-
-        user_books(where: {rating: {_is_null: false}}) {
-          rating
-          user_id
-          user {
-            username
-            name
-          }
+        editions {
+          id
         }
+        slug
+        dto_combined
       }
     }
     '''
-        # slug
-        # editions {
-        #   id
-        # }
+
+    base_user_query = '''
+    query GetUser($OFFSET_BOOK: Int!, $LIMIT_BOOK: Int!) {
+      users(
+        where: {books_count: {_gt: 0}}
+        order_by: {books_count: desc}
+        limit: $LIMIT_BOOK
+        offset: $OFFSET_BOOK
+      ) {
+        id
+        name
+        username
+        books_count
+      }
+    }
+    '''
 
     user_book_query = '''
     query GetUserBook($OFFSET_BOOK: Int!, $LIMIT_BOOK: Int!) {
@@ -191,15 +197,25 @@ def main():
       }
     }
     '''
-    # Count total is 1631328
+    querymatcher = {
+        'book': base_book_query,
+        'user': base_user_query,
+        'rating': user_book_query
+    }
+
+    print(f"{querymatcher[args.querytype]}")
+    # Count total rating is 1631328
     # Get 200000 each request/file
-    # python getdata.py -s 0 -e 1631000 -t 200000 -m 200000
+    # python getdata.py rating -s 0 -e 1631000 --step 200000 -m 200000
+
+    # Count total book is 1577754
+    # python getdata.py book -s 0 -e 1577700 --step 1000 -m 50000
 
     # Initialize and run crawler
     crawler = GraphQLCrawler(
         url='https://api.hardcover.app/v1/graphql',
-        base_query=user_book_query,
-        base_filename='hardcover_rating',
+        base_query=querymatcher[args.querytype],
+        base_filename=f'hardcover_{args.querytype}',
     )
 
     total_range = global_end - global_start

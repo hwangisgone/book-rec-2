@@ -20,16 +20,16 @@
 	// Test: /book/9780590353403
 
 	const ratingHistogram = [
-		ratingInfo.rating_05_count,
-		ratingInfo.rating_1_count,
-		ratingInfo.rating_15_count,
-		ratingInfo.rating_2_count,
-		ratingInfo.rating_25_count,
-		ratingInfo.rating_3_count,
-		ratingInfo.rating_35_count,
-		ratingInfo.rating_4_count,
+		ratingInfo.rating_5_count,
 		ratingInfo.rating_45_count,
-		ratingInfo.rating_5_count
+		ratingInfo.rating_4_count,
+		ratingInfo.rating_35_count,
+		ratingInfo.rating_3_count,
+		ratingInfo.rating_25_count,
+		ratingInfo.rating_2_count,
+		ratingInfo.rating_15_count,
+		ratingInfo.rating_1_count,
+		ratingInfo.rating_05_count,
 	];
 
 	let averageRating = ratingInfo.average_rating ?? 0;
@@ -80,7 +80,7 @@
 </button> -->
 
 <!-- <div class="mx-auto px-4 py-8 sm:px-6 lg:px-8"> -->
-<div class="-mx-4 flex flex-col md:flex-row">
+<div class="-mx-4 flex flex-col md:flex-row pr-4">
 	<div class="md:flex-2 px-3">
 		<div class="mb-4 h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700">
 			<img class="h-full w-full object-cover" src={currentBook.image_url} alt="Book Cover" />
@@ -141,44 +141,6 @@
 			</div>
 		</div>
 
-		<div class="w-80">
-			<h1 class="mb-2 text-xl font-semibold">Community reviews</h1>
-
-			<div class="flex h-32 items-end gap-1 rounded border-2 px-1">
-				{#each ratingHistogram as count, index (index)}
-					{@const percentage = Math.ceil(Math.max(5, (count / ratingInfo.total_ratings) * 100))}
-
-					<span class="relative flex-1 rounded bg-yellow-400" style:height={`${percentage}%`}>
-						<!-- Hover -->
-						<span
-							class="absolute bottom-0 h-[7.8rem] w-full hover:bg-yellow-900/10"
-							use:popup={makePopup('popup' + index)}
-						>
-						</span>
-					</span>
-
-					<!-- Popup -->
-					<div class="variant-filled rounded p-2 duration-75" data-popup={'popup' + index}>
-						<span class="flex items-center"
-							>{count} ({((index + 1) / 2).toFixed(1)}
-							<StarIcon class="ml-1" size="1.2em" fill="gold" strokeWidth={2} />)
-						</span>
-						<div class="variant-filled arrow"></div>
-					</div>
-				{/each}
-			</div>
-
-			<div class="flex justify-between">
-				<span class="flex items-center"
-					>0.5
-					<StarIcon class="ml-1" style="color: gold" size="1.2em" fill="gold" strokeWidth={2} />
-				</span>
-				<span class="flex items-center"
-					>5
-					<StarIcon class="ml-1" style="color: gold" size="1.2em" fill="gold" strokeWidth={2} />
-				</span>
-			</div>
-		</div>
 
 		<!-- Nút bấm -->
 		<div>
@@ -232,6 +194,57 @@
 					</div>
 				</div>
 			{/if}
+		</div>
+
+		<h1 class="mb-2 text-xl font-semibold">Community reviews</h1>
+		<div class="w-[40rem] flex">
+			
+			<div class="flex flex-col justify-between items-end py-1">
+				<span class="flex items-center"
+					>5
+					<StarIcon class="ml-1" style="color: gold" size="1.2em" fill="gold" strokeWidth={2} />
+				</span>
+				<span class="flex items-center"
+					>3
+					<StarIcon class="ml-1" style="color: gold" size="1.2em" fill="gold" strokeWidth={2} />
+				</span>
+				<span class="flex items-center mt-6"
+					>0.5
+					<StarIcon class="ml-1" style="color: gold" size="1.2em" fill="gold" strokeWidth={2} />
+				</span>
+
+			</div>
+
+			<div class="flex flex-1 flex-col items-start gap-1 rounded border-2 p-1 mx-1">
+				{#each ratingHistogram as count, index (index)}
+					{@const percentage = Math.ceil(Math.max(1, (count / ratingInfo.total_ratings) * 100))}
+
+					<span class="relative flex-1 flex gap-1 w-full">
+						<span class="rounded bg-yellow-400" style:width={`${percentage}%`}>
+							<!-- Hover
+							<span
+								class="absolute bottom-0 h-full w- hover:bg-yellow-900/10"
+								use:popup={makePopup('popup' + index)}
+							>
+							</span> -->
+							
+						</span>
+						<span class="text-surface-800 text-sm py-[0.125rem]">{count}</span>
+					</span>
+
+
+					<!-- Popup -->
+					<!-- <div class="variant-filled rounded p-2 duration-75" data-popup={'popup' + index}>
+						<span class="flex items-center"
+							>{count} ({((index + 1) / 2).toFixed(1)}
+							<StarIcon class="ml-1" size="1.2em" fill="gold" strokeWidth={2} />)
+						</span>
+						<div class="variant-filled arrow"></div>
+					</div> -->
+				{/each}
+			</div>
+
+
 		</div>
 	</div>
 </div>
