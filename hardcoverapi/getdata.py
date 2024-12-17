@@ -148,7 +148,8 @@ def main():
     base_book_query = '''
     query GetBook($OFFSET_BOOK: Int!, $LIMIT_BOOK: Int!) {
       books(
-        order_by: {id: asc}
+        # where: {ratings_count: {_gt: 10}}
+        # order_by: {id: desc}
         limit: $LIMIT_BOOK
         offset: $OFFSET_BOOK
       ) {
@@ -156,9 +157,9 @@ def main():
         cached_image
         cached_contributors
         id
-        editions {
-          id
-        }
+        # editions {
+        #   id
+        # }
         slug
         dto_combined
       }
@@ -168,7 +169,6 @@ def main():
     base_user_query = '''
     query GetUser($OFFSET_BOOK: Int!, $LIMIT_BOOK: Int!) {
       users(
-        where: {books_count: {_gt: 0}}
         order_by: {books_count: desc}
         limit: $LIMIT_BOOK
         offset: $OFFSET_BOOK
@@ -209,7 +209,12 @@ def main():
     # python getdata.py rating -s 0 -e 1631000 --step 200000 -m 200000
 
     # Count total book is 1577754
+    # Max get/request: 1000
     # python getdata.py book -s 0 -e 1577700 --step 1000 -m 50000
+
+    # Count total user is about 20k < 22k < 30k
+    # Max get/request: 100
+    # python getdata.py user -s 0 -e 22000 --step 100 -m 10000
 
     # Initialize and run crawler
     crawler = GraphQLCrawler(
