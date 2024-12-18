@@ -1,4 +1,5 @@
 import os
+import csv
 import json
 import math
 import argparse
@@ -14,7 +15,8 @@ class GraphQLCrawler:
     def __init__(self, 
                  url, 
                  base_query, 
-                 base_filename='export'):
+                 base_filename='export',
+                 book_get_list=[]):
         """
         Advanced GraphQL crawler with precise range calculation
         
@@ -26,6 +28,7 @@ class GraphQLCrawler:
         self.url = url
         self.base_query = base_query
         self.base_filename = base_filename
+        self.book_get_list = book_get_list
 
         # Read Authorization from .env file
         auth_token = os.getenv('GRAPHQL_AUTH_TOKEN', '')
@@ -55,6 +58,12 @@ class GraphQLCrawler:
             'OFFSET_BOOK': offset,
             'LIMIT_BOOK': limit
         }
+
+        if self.book_get_list:
+            variables = {
+                'BOOKID_LIST': self.book_get_list[offset:offset+limit]
+            }
+
         attempts = 0
         while attempts < max_retries:
             try:
@@ -120,17 +129,24 @@ class GraphQLCrawler:
         print(f"Count: {len(collected_data)} Exported: {filename}")
 
             
-            
+def parse_csv_to_list_id(csv_path):
+    """Parse the first column of a CSV file into a list."""
+    with open(csv_path, mode='r', newline='', encoding='utf-8') as file:
+        reader = csv.reader(file)
+        # Extract the first column
+        first_column = [row[0] for row in reader if row]  # Ensure the row is not empty
+    return list(map(int, first_column[1:]))
         
     
 
 def main():
     parser = argparse.ArgumentParser(description="Export Hardcover API data to JSON in chunks. Will get book data sorted from most rated to least rated (minimum 100 ratings).")
-    parser.add_argument("querytype", choices=['book','rating','user'], help="Type of query to make.")
+    parser.add_argument("querytype", choices=['book','rating','user','book_list'], help="Type of query to make.")
     parser.add_argument("-s", "--start", type=int, default=0, help="The starting value of the range (default: 0).")
     parser.add_argument("-e", "--end", type=int, default=50, help="The ending value of the range (default: 50).")
     parser.add_argument("-t", "--step", type=int, default=1, help="Step size for the range (default: 1).")
     parser.add_argument("-m", "--max_per_file", type=int, default=10, help="Maximum number of entries per file (default: 10).")
+    parser.add_argument("--book_id_file", type=str, default=None, help="Maximum number of entries per file (default: 10).")
 
     args = parser.parse_args()
 
@@ -141,8 +157,31 @@ def main():
     global_end = args.end
     step = args.step
     max_per_file = args.max_per_file
+
+    querytype = args.querytype
+    book_list = []
+
+
+    if args.book_id_file:
+        print("Book ID CSV file provided. Trying...")
+        try:
+            # Parse the CSV file
+            book_list = parse_csv_to_list_id(args.book_id_file)
+            print("First column values:")
+
+            querytype = "book_list"
+            global_end = len(book_list)
+        except FileNotFoundError:
+            print(f"Error: File not found at path '{args.book_id_file}'.")
+        except Exception as e:
+            print(f"Error: Failed to process the file. Details: {e}")
+    else:
+        if querytype == "book_list":
+           print(f"Error: Must provide path")
+           return
+        
     
-    print(f'Starting {args.querytype} ({global_start}-{global_end},step: {step},max: {max_per_file})')
+    print(f'Starting {querytype} ({global_start}-{global_end},step: {step},max: {max_per_file})')
 
     # Example GraphQL query with offset placeholder
     base_book_query = '''
@@ -160,6 +199,19 @@ def main():
         # editions {
         #   id
         # }
+        slug
+        dto_combined
+      }
+    }
+    '''
+
+    book_list_query = '''
+    query GetBookFromList($BOOKID_LIST: [Int!]) {
+      books(where: {id: {_in: $BOOKID_LIST}}) {
+        cached_tags
+        cached_image
+        cached_contributors
+        id
         slug
         dto_combined
       }
@@ -200,10 +252,11 @@ def main():
     querymatcher = {
         'book': base_book_query,
         'user': base_user_query,
-        'rating': user_book_query
+        'rating': user_book_query,
+        'book_list': book_list_query
     }
 
-    print(f"{querymatcher[args.querytype]}")
+    print(f"{querymatcher[querytype]}")
     # Count total rating is 1631328
     # Get 200000 each request/file
     # python getdata.py rating -s 0 -e 1631000 --step 200000 -m 200000
@@ -219,8 +272,9 @@ def main():
     # Initialize and run crawler
     crawler = GraphQLCrawler(
         url='https://api.hardcover.app/v1/graphql',
-        base_query=querymatcher[args.querytype],
-        base_filename=f'hardcover_{args.querytype}',
+        base_query=querymatcher[querytype],
+        base_filename=f'hardcover_{querytype}',
+        book_get_list=book_list
     )
 
     total_range = global_end - global_start
