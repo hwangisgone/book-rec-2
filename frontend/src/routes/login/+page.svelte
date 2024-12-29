@@ -62,7 +62,7 @@
 
 </script>
 
-<div class="h-screen bg-primary-300 from-blue-600 to-cyan-300 flex justify-center items-center w-full">
+<div class="h-screen bg-primary from-blue-600 to-cyan-300 flex justify-center items-center w-full">
         
     <form method='POST' action='#'>
         <div class="bg-white px-10 py-8 rounded-xl w-screen shadow-xl max-w-sm">
@@ -84,13 +84,6 @@
                 
             </div>
             </div>
-            <!-- Remember Me checkbox -->
-            <!-- <div class="flex justify-center items-center mt-4">
-                <p class="inline-flex items-center text-gray-700 font-medium text-xs text-center">
-                    <input type="checkbox" id="rememberMeCheckbox" name="rememberMe" class="mr-2">
-                    <span class="text-xs font-semibold">Remember me?</span>
-                </p>
-            </div> -->
 
             <button type="submit" value="login" id="login" on:click= {LoginBtn} class="mt-6 w-full shadow-xl bg-gradient-to-tr from-blue-600 to-red-400 hover:to-red-700 text-indigo-100 py-2 rounded-md text-lg tracking-wide transition duration-1000">Login</button>
             {#if isLogin}
@@ -99,7 +92,7 @@
             <hr>
             <div class="flex justify-center items-center mt-4">
                 <p class="inline-flex items-center text-gray-700 font-medium text-xs text-center">
-                    <span class="ml-2">You don't have an account?<a href="#" class="text-xs ml-2 text-blue-500 font-semibold">Register now &rarr;</a>
+                    <span class="ml-2">You don't have an account?<a href="/register" class="text-xs ml-2 text-blue-500 font-semibold">Register now &rarr;</a>
                     </span>
                 </p>
             </div>
