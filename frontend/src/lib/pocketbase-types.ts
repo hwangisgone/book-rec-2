@@ -99,7 +99,6 @@ export enum BookCrawlSourceOptions {
 export type BookRecord = {
 	ISBN_10?: string;
 	author: string;
-	average_rating?: number;
 	crawl_source: BookCrawlSourceOptions;
 	created?: IsoDateString;
 	description: string;
@@ -109,7 +108,6 @@ export type BookRecord = {
 	language?: string;
 	num_pages?: number;
 	publish_date?: IsoDateString;
-	review_count?: number;
 	series?: RecordIdString;
 	title: string;
 	updated?: IsoDateString;

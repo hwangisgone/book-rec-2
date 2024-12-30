@@ -13,7 +13,7 @@
 	let { data } = $props();
 
 	const currentBook = data.book;
-	const rating10s = data.ratings;
+	// const rating10s = data.ratings;
 	const ratingInfo = data.ratings_info;
 
 	console.log(data);
@@ -31,6 +31,10 @@
 		ratingInfo.rating_1_count,
 		ratingInfo.rating_05_count,
 	];
+
+	const bookPublishDate = currentBook.publish_date_date 
+		? new Intl.DateTimeFormat("en-GB").format(currentBook.publish_date_date) 
+		: "Unknown";
 
 	let averageRating = ratingInfo.average_rating ?? 0;
 	// Tạo mảng các sao, mỗi sao có trạng thái full (đầy), half (nửa), hoặc empty (rỗng)
@@ -66,6 +70,7 @@
 
 	// Icons
 	import StarIcon from 'lucide-svelte/icons/star';
+	import placeholderImage from '$lib/book-cover-placeholder.png';
 </script>
 
 <!-- <div>
@@ -80,10 +85,16 @@
 </button> -->
 
 <!-- <div class="mx-auto px-4 py-8 sm:px-6 lg:px-8"> -->
+<!-- Page content -->
+<main class="flex-1 overflow-y-auto p-6">
 <div class="-mx-4 flex flex-col md:flex-row pr-4">
-	<div class="md:flex-2 px-3">
-		<div class="mb-4 h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700">
-			<img class="h-full w-full object-cover" src={currentBook.image_url} alt="Book Cover" />
+	<div class="px-3 max-w-[320px]">
+		<div class="mb-4 h-[480px] rounded-lg bg-gray-300 dark:bg-gray-700">
+			<img class="h-full w-full object-cover" 
+				src={currentBook.image_url || placeholderImage} 
+				alt="Book Cover" 
+				onerror={(e) => ((e.target as HTMLImageElement).src = placeholderImage)}
+			/>
 		</div>
 
 		<div class="-mx-2 mb-4 flex">
@@ -94,7 +105,15 @@
 			</Ratings>
 		</div>
 
-		<div class="text-center">Rating this book</div>
+		<div class="text-center">Rate this book</div>
+
+		<span class="font-bold text-gray-700 dark:text-gray-300">Genres</span>
+
+		<div class="mt-2 flex flex-wrap gap-2">
+			{#each currentBook.genres as thing}
+				<div class="variant-filled badge">{thing}</div>
+			{/each}
+		</div>
 	</div>
 
 	<div class="flex flex-col gap-4 px-4 md:flex-1">
@@ -124,21 +143,11 @@
 			</div>
 
 			<div class="text-align: center font-sans md:font-serif">
-				{ratingInfo.total_ratings} ratings - {0} reviews
+				{ratingInfo.total_ratings} ratings
 			</div>
-			<p class="mb-4 text-sm text-gray-600 dark:text-gray-300">
-				{currentBook.description}
+			<p class="mb-4 whitespace-pre-line text-sm text-gray-600 dark:text-gray-300">
+				{currentBook.description.replaceAll("\\r\\n","\n")}
 			</p>
-		</div>
-
-		<div>
-			<span class="mb-2 font-bold text-gray-700 dark:text-gray-300">Genres </span>
-			<!-- <span class="text-gray-600 dark:text-gray-300">{currentBook.genres}</span> -->
-			<div class="flex gap-2">
-				{#each currentBook.genres as thing}
-					<div class="variant-filled badge">{thing}</div>
-				{/each}
-			</div>
 		</div>
 
 
@@ -166,7 +175,7 @@
 							<div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-3">
 								<dt class="text-sm font-medium text-gray-500">Published</dt>
 								<dd class="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-									{currentBook.publish_date_date}
+									{bookPublishDate}
 								</dd>
 							</div>
 							<div class="py-3 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-3">
@@ -248,7 +257,7 @@
 		</div>
 	</div>
 </div>
-
+</main>
 <!-- </div> -->
 
 <style>

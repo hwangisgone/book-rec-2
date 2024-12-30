@@ -20,6 +20,8 @@ declare global {
 		publish_date_date?: Date;
 		genres: string[];
 		series?: string;
+		average_rating?: number;
+		total_ratings?: number;
 	};
 	type UserAccount = {
 		full_name: string;

@@ -1,9 +1,19 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	// Import icons from lucide-react or another icon library
-	// import { Home, Settings, User } from 'lucide-react';
+
+	import HomeIcon from 'lucide-svelte/icons/origami';
+	import UserIcon from 'lucide-svelte/icons/user-round';
+	import SettingIcon from 'lucide-svelte/icons/settings';
+	import SparkleIcon from 'lucide-svelte/icons/sparkles';
 
 	let { children } = $props();
+
+	const routeMap = {
+		'/explore': { name: "Explore", icon: HomeIcon },
+		'/recommender': { name: "Recommended", icon: SparkleIcon },
+		'/profile': { name: "Profile", icon: UserIcon },
+		// '/settings': { name: "Settings", icon: SettingIcon }
+	}
 </script>
 
 <div class="flex h-screen">
@@ -12,24 +22,14 @@
 		<nav class="p-4">
 			<h2 class="mb-4 text-xl font-bold">Dashboard</h2>
 			<ul class="space-y-2">
-				<li>
-					<a aria-current="page" href="/">
-						<!-- <Home class="mr-2" /> -->
-						Home
-					</a>
-				</li>
-				<li>
-					<a href="/profile">
-						<!-- <User class="mr-2" /> -->
-						Profile
-					</a>
-				</li>
-				<li>
-					<a href="/settings">
-						<!-- <Settings class="mr-2" /> -->
-						Settings
-					</a>
-				</li>
+				{#each Object.entries(routeMap) as [route, routeInfo]}
+					<li>
+						<a aria-current={$page.url.pathname === route ? "page" : false} href={route}>
+							<routeInfo.icon class="mr-2" size="1.2em" />
+							{routeInfo.name}
+						</a>
+					</li>
+				{/each}
 			</ul>
 		</nav>
 	</aside>
@@ -39,13 +39,14 @@
 		<!-- Header -->
 		<header class="flex items-center justify-between px-6 py-4 shadow-sm">
 			<h1 class="text-2xl font-semibold">
-				{#if $page.url.pathname === '/'}
+				{routeMap[$page.url.pathname]?.name}
+<!-- 				{#if $page.url.pathname === '/'}
 					Dashboard
 				{:else if $page.url.pathname === '/profile'}
 					Profile
 				{:else if $page.url.pathname === '/settings'}
 					Settings
-				{/if}
+				{/if} -->
 			</h1>
 			<div class="flex items-center space-x-4">
 				<!-- Add user menu or action buttons -->
@@ -53,10 +54,7 @@
 			</div>
 		</header>
 
-		<!-- Page content -->
-		<main class="flex-1 overflow-y-auto p-6">
-			{@render children()}
-		</main>
+		{@render children()}
 	</div>
 </div>
 
