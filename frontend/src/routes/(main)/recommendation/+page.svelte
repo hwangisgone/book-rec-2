@@ -1,4 +1,46 @@
 <script lang="ts">
+  import { getOneBook } from '$lib/api';
+  let recommendedList = $state<Book>([]);
+  async function getDataById(id) {
+    // Simulate fetching data (replace with your actual fetch logic)
+    console.log("Getting: ", id);
+    try {
+      const data = await getOneBook(id);
+      recommendedList.push(data);
+    } catch (e) {
+      console.log(e)
+    }
+  }
+  let chosenId = $state(35227);
+  let numRecommend = $state(10);
+  async function getShit(userId)  {
+    try{
+       const response = await fetch('http://127.0.0.1:5000/recommend', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ userID: userId, get_recommend: numRecommend })
+        });
+
+      const recommendedIds = await response.json(); // Parse the JSON response
+
+      const dataPromises = recommendedIds.map(id => getDataById(id));
+      await Promise.all(dataPromises);
+      // console.log(response);
+      // console.log(data);
+    } catch (e) {
+      console.log(e)
+    }
+
+  }
+
+  $effect(() =>{
+    recommendedList = []
+    getShit(chosenId);
+  })
+
+  $inspect(recommendedList)
    const moviesData = [
   {
     "id": "9783950000000",
@@ -146,62 +188,33 @@
   }
 </script>
 
-<h2 class = "font-sans font-semibold  text-lg pb-2">Similar book</h2>
-<div class="scroll-container bg-success">
-<button type="button"  on:click={()=>multiColumnLeft(elemMovies1)} style = "width:200px" >
-  <img 
-    src = https://www.svgrepo.com/show/238335/next.svg
-    class = "rotate-180"
-   />
-</button>
-<div class="grid grid-cols-5 gap-4 item-center   p-2   ">
-	
-	<div bind:this={elemMovies1} style = "width:1140px"  class="scrollable-content snap-x snap-mandatory scroll-smooth flex gap-4  pb-2 overflow-x-auto">
-		
-    {#each moviesData as book}
-			<a href={`/book/${book.id}`} style="width:180px" class="shrink-0 snap-start">
-				<!-- class="rounded-container-token hover:brightness-125  " -->
-        <img
-          class = "image-container rounded-container-token hover:brightness-125"
-					
-          style = "width:200px"
-					src={book.image_url}
-					alt={book.title}
-					title={book.title}
-					loading="lazy"
-				/>
-			</a>
-		{/each}
-	</div>
-
-</div>
-<button type="button"  on:click={()=> multiColumnRight(elemMovies1)} style = "width:200px">
-  <img src = https://www.svgrepo.com/show/238335/next.svg />
-  
-</button>		
+<div class="p-4">
+UserId: <input type="number" class="input" bind:value={chosenId}/>
 </div>
 
-
+<div class="p-4">
+Number of Recommendation: <input type="number" class="input" bind:value={numRecommend}/>
+</div>
 <h2 class = "font-sans font-semibold  text-lg pb-2 p-5">Other users also like </h2>
 <div class="scroll-container">
-<button type="button"  on:click={()=>multiColumnLeft(elemMovies2)} style = "width:200px" >
+<button type="button"  onclick={()=>multiColumnLeft(elemMovies2)} style = "width:200px" >
   <img 
-    src = https://www.svgrepo.com/show/238335/next.svg
+    src = "https://www.svgrepo.com/show/238335/next.svg"
     class = "rotate-180"
    />
 </button>
 <div class="grid grid-cols-5 gap-4 item-center   ">
 	
 	<div bind:this={elemMovies2} style = "width:1140px"  class="  scrollable-content snap-x snap-mandatory scroll-smooth flex gap-4  pb-2 overflow-x-auto">
-    {#each moviesData2.movies as movie}
-			<a href={movie.url} style="width:180px height:240px" class="shrink-0 object-contain w-180 h-240 snap-start">
+    {#each recommendedList as movie}
+			<a href={`/book/${movie.ISBN_13}`} style="width:320px height:480px" class="shrink-0 object-contain snap-start">
 				<img
 					
           class = "image-container rounded-container-token hover:brightness-125"
           style = "width:200px"
-					src={movie.imageUrl}
-					alt={movie.name}
-					title={movie.name}
+					src={movie.image_url}
+					alt={movie.title}
+					title={movie.title}
 					loading="lazy"
 				/>
 			</a>
@@ -209,8 +222,8 @@
 	</div>
 
 </div>
-<button type="button"  on:click={()=> multiColumnRight(elemMovies2)} style = "width:200px">
-  <img src = https://www.svgrepo.com/show/238335/next.svg />
+<button type="button"  onclick={()=> multiColumnRight(elemMovies2)} style = "width:200px">
+  <img src = "https://www.svgrepo.com/show/238335/next.svg" />
   
 </button>		
 </div>

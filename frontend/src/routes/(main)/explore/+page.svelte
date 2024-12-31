@@ -44,17 +44,18 @@
 
   let hoveredBook = null; 
 
+  import StarIcon from 'lucide-svelte/icons/star';
 </script>
 
 <!-- class="w-full h-60 object-contain bg-white" -->
 <!-- Page content -->
 <main class="flex-1 overflow-y-auto p-6" onscroll={handleScroll}>
 
-<section class="grid grid-cols-6 gap-5">
+<section class="grid grid-cols-5 gap-5">
 
     {#each loadedCache.bookList as book}
     <!-- svelte-ignore a11y_no_static_element_interactions -->
-    <div class=" bg-white shadow-md rounded-lg overflow-hidden hover:outline hover:outline-4 hover:outline-yellow-600 hover:scale-105 flex flex-col"
+    <div class=" bg-white shadow-md rounded-lg overflow-hidden hover:outline hover:outline-4 hover:outline-primary-500 hover:scale-105 flex flex-col"
 
       onmouseenter={() => (hoveredBook = book)} 
       onmouseleave={() => (hoveredBook = null)}
@@ -68,15 +69,27 @@
             />
            
         </a>
-        <div class="p-4 bg-amber-100">
-            <h3 class="text-sm font-semibold text-gray-800 truncate">{book.title}</h3>
-            <!-- <p class="text-sm text-gray-500">{book.publish_date}</p> -->
+        <div class="px-4 py-3 bg-primary-300">
+          <div class="flex justify-between text-sm ">
+            <h3 class="font-semibold text-gray-800 truncate max-w-40">{book.title}</h3>
+          </div>
+          <div class="flex justify-between text-xs text-gray-500">
+            <p>{book.author}</p>
+            <div class="flex items-center">
+              <p>{book.average_rating.toFixed(1)}</p>
+              <StarIcon class="mx-1" style="color: rgba(var(--color-primary-500) / 1)" size="1em" fill="rgba(var(--color-primary-500) / 1)" strokeWidth={2} />
+              <p>({book.total_ratings})</p>
+            </div>
+          </div>         
         </div>
+
     </div>
     {/each}
 
     {#if loading}
-      <ProgressRadial />
+      <div class="col-span-5 flex justify-center py-4">
+        <ProgressRadial strokeLinecap="round" meter="stroke-primary-500"/>
+      </div>
     {/if}
 </section>
 </main>

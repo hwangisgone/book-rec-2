@@ -10,7 +10,7 @@
 
 	const routeMap = {
 		'/explore': { name: "Explore", icon: HomeIcon },
-		'/recommender': { name: "Recommended", icon: SparkleIcon },
+		'/recommendation': { name: "Recommended", icon: SparkleIcon },
 		'/profile': { name: "Profile", icon: UserIcon },
 		// '/settings': { name: "Settings", icon: SettingIcon }
 	}

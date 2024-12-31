@@ -36,6 +36,21 @@ import type {
     return dateB.getTime() - dateA.getTime();
 }
 
+export async function getOneBook(bookid: string): Promise<Book> {
+		const item = await pb
+			.collection('book')
+			.getOne<BookResponse & { average_rating: number, total_ratings: number }>(bookid, {
+				fields: 'id,title,image_url,author,publish_date',
+				sort: '-publish_date',
+				// fetch: this.#fetch
+			})
+
+		return {
+			...item,
+			ISBN_13: item.id,
+			publish_date_date: item.publish_date ? new Date(item.publish_date) : undefined,
+		};
+}
 
 export class bookListApi {
 	// #fetch: any = undefined;
@@ -50,7 +65,7 @@ export class bookListApi {
 			.collection('rating_aggregate')
 			.getList<BookResponse<{ book: BookRecord } > & { average_rating: number, total_ratings: number }>(pageOffset, 50, {
 
-				fields: 'id,average_rating,total_ratings,expand.book.title,expand.book.image_url,expand.book.publish_date',
+				fields: 'id,average_rating,total_ratings,expand.book.title,expand.book.image_url,expand.book.publish_date,expand.book.author',
 				sort: '-book.publish_date',
 				filter: 'book.publish_date < "2024-12-31"',
 				expand: 'book'
